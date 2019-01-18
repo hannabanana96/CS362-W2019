@@ -36,7 +36,7 @@ int* kingdomCards(int k1, int k2, int k3, int k4, int k5, int k6, int k7,
 
 
 //new smithy card function, is used in cardEffect
-void run_smithy(int currentPlayer, struct gameState *state, int handPos){
+int run_smithy(int currentPlayer, struct gameState *state, int handPos){
 	int i;
 	for (i = 0; i < 3; i++)
 	{
@@ -45,10 +45,11 @@ void run_smithy(int currentPlayer, struct gameState *state, int handPos){
 			
 	//discard card from hand
 	discardCard(handPos, currentPlayer, state, 0);
+	return 0;
 }
 
 //new adventurer function, is used in cardEffect
-void run_adventurer(int currentPlayer, int drawntreasure, struct gameState *state, 
+int run_adventurer(int currentPlayer, int drawntreasure, struct gameState *state, 
 						  int cardDrawn, int *temphand, int z) {
 	while(drawntreasure<2){
 		//if the deck is empty we need to shuffle discard and add to deck
@@ -76,10 +77,11 @@ void run_adventurer(int currentPlayer, int drawntreasure, struct gameState *stat
 		state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[z-1];
 		z=z-1;
 	}
+	return 0;
 }
 
 //new village function, is used in cardEffect
-void run_village(int currentPlayer, struct gameState *state, int handPos){
+int run_village(int currentPlayer, struct gameState *state, int handPos){
 
 	drawCard(currentPlayer, state);
 			
@@ -89,6 +91,7 @@ void run_village(int currentPlayer, struct gameState *state, int handPos){
 	//discard played card from hand
 	discardCard(handPos, currentPlayer, state, 0);
 
+	return 0;
 }
 
 //new mine function, is used in cardEffect
@@ -132,7 +135,7 @@ int run_mine(int currentPlayer, struct gameState *state, int handPos, int choice
 	return 0;
 }
 
-void run_tribute(int currentPlayer, int nextPlayer, int *tributeRevealedCards, struct gameState *state){
+int run_tribute(int currentPlayer, int nextPlayer, int *tributeRevealedCards, struct gameState *state){
 	int i;
 
 	if ((state->discardCount[nextPlayer] + state->deckCount[nextPlayer]) <= 1){
@@ -197,7 +200,8 @@ void run_tribute(int currentPlayer, int nextPlayer, int *tributeRevealedCards, s
 		else{
 			state->numActions = state->numActions + 2;
 		}
-	}   
+	}
+	return 0;	
 }
 
 int initializeGame(int numPlayers, int kingdomCards[10], int randomSeed,

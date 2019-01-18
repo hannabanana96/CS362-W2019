@@ -81,21 +81,21 @@ struct gameState* newGame();
 int* kingdomCards(int k1, int k2, int k3, int k4, int k5, int k6, int k7,
 		  int k8, int k9, int k10);
 
-void run_smithy(int currentPlayer, struct gameState *state, int handPos);
+int run_smithy(int currentPlayer, struct gameState *state, int handPos);
 /*new smithy function, was originally in cardEffect*/
 
-void run_adventurer(int currentPlayer, int drawntreasure, struct gameState *state,
+int run_adventurer(int currentPlayer, int drawntreasure, struct gameState *state,
 						  int cardDrawn, int *temphand, int z);
 /*new adventurer function, was originally in cardEffect*/
 
-void run_village(int currentPlayer, struct gameState *state, int handPos);
+int run_village(int currentPlayer, struct gameState *state, int handPos);
 /*new village function, was originally in cardEffect*/
 
 int run_mine(int currentPlayer, struct gameState *state, int handPos, int choice1, 
 				  int choice2, int j);
 /*new mine function, was originally in cardEffect*/
 
-void run_tribute(int currentPlayer, int nextPlayer, int *tributeRevealedCards, 
+int run_tribute(int currentPlayer, int nextPlayer, int *tributeRevealedCards, 
 						struct gameState *state);
 /*new tribute function, was originally in cardEffect*/
 
