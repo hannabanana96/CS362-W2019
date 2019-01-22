@@ -38,7 +38,9 @@ int* kingdomCards(int k1, int k2, int k3, int k4, int k5, int k6, int k7,
 //new smithy card function, is used in cardEffect
 int run_smithy(int currentPlayer, struct gameState *state, int handPos){
 	int i;
-	for (i = 0; i < 3; i++)
+	//***included error here. This will now cause the game to draw one card instead
+	//of three cards 
+	for (i = 0; i < 1; i++)
 	{
 		drawCard(currentPlayer, state);
 	}
@@ -61,9 +63,11 @@ int run_adventurer(int currentPlayer, int drawntreasure, struct gameState *state
 
 		//top card of hand is most recently drawn card.
 		cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];
-		
+
+		//****inserted error here. Instead of incrementing the drawntreasure variable,
+		//it now will always be 2. This will result in only one treasure card being drawn.
 		if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
-			drawntreasure++;
+			drawntreasure=2;
 		else{
 			temphand[z]=cardDrawn;
 			//this should just remove the top card (the most recently drawn one).	
@@ -83,6 +87,10 @@ int run_adventurer(int currentPlayer, int drawntreasure, struct gameState *state
 //new village function, is used in cardEffect
 int run_village(int currentPlayer, struct gameState *state, int handPos){
 
+	//****inserted error here. Intead of drawing just one card, three cards will
+	//be drawn.
+	drawCard(currentPlayer, state);
+	drawCard(currentPlayer, state);
 	drawCard(currentPlayer, state);
 			
 	//+2 Actions
@@ -95,8 +103,11 @@ int run_village(int currentPlayer, struct gameState *state, int handPos){
 }
 
 //new mine function, is used in cardEffect
-int run_mine(int currentPlayer, struct gameState *state, int handPos, int choice1,
-				  int choice2, int j){
+//Added error here. Flipped choice1 and choice2. Now, the card the player 
+//wants to trash will actually indicate the cardposition they will buy. 
+//The card they indicate to buy will now be the cardposition that will be trashed.
+int run_mine(int currentPlayer, struct gameState *state, int handPos, int choice2,
+				  int choice1, int j){
 
 	j = state->hand[currentPlayer][choice1];  //store card we will trash
 
@@ -135,7 +146,8 @@ int run_mine(int currentPlayer, struct gameState *state, int handPos, int choice
 	return 0;
 }
 
-int run_tribute(int currentPlayer, int nextPlayer, int *tributeRevealedCards, struct gameState *state){
+int run_tribute(int currentPlayer, int nextPlayer, int *tributeRevealedCards, 
+					 struct gameState *state){
 	int i;
 
 	if ((state->discardCount[nextPlayer] + state->deckCount[nextPlayer]) <= 1){
