@@ -1,0 +1,283 @@
+Results for running cardtests:
+cardtest1.c:
+****************************************
+            Smithy Card Test              
+****************************************
+Test 1: Current player should receive 3 cards
+	Hand count = 5, expected = 7
+	The number cards in hand did not increase by 3
+FAILED
+
+Test 2: Current deck should decrease by 3 cards
+	Deck count = 4, expected = 2
+	The deck did not decrease by 3
+FAILED
+
+Test 3: No state change should occur of the other players
+	Current player: 0, expected 0
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+ The other player's deck was not effected.
+PASS
+
+	Make sure the other player's hand was not touched
+	The other player's hand was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+File 'dominion.c'
+Lines executed:20.18% of 570
+Branches executed:22.78% of 417
+Taken at least once:13.91% of 417
+Calls executed:11.34% of 97
+Creating 'dominion.c.gcov'
+
+
+cardtest2.c:
+****************************************
+            Village Card Test              
+****************************************
+Test 1: Current player should receive 1 card
+	Hand count = 7, expected = 5
+	The number cards in hand did not increase by 1
+FAILED
+
+Test 2: Current deck should decrease by 1 card
+	Deck count = 2, expected = 4
+	The deck did not decrease by 1
+FAILED
+
+Test 3: Current player gets two more actions
+	Actions = 3, expected = 3
+	Correct number of actions
+PASS
+
+Test 4: No state change should occur of the other players
+	Current player: 0, expected 0
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+ The other player's deck was not effected.
+PASS
+
+	Make sure the other player's hand was not touched
+	The other player's hand was not effected.
+PASS
+
+Test 5: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+File 'dominion.c'
+Lines executed:20.53% of 570
+Branches executed:22.30% of 417
+Taken at least once:13.43% of 417
+Calls executed:13.40% of 97
+Creating 'dominion.c.gcov'
+
+
+cardtest3.c:
+****************************************
+            Cutpurse Card Test              
+****************************************
+Test 1: Current player should receive 2 additional coins
+	Coin count = 7, expected = 5
+	Incorrect number of coins
+FAILED
+
+Test 2: Each player should discard a copper if they have one
+	The copper was successfully removed from the other player's hand
+PASS
+
+Test 5: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+File 'dominion.c'
+Lines executed:20.53% of 570
+Branches executed:24.22% of 417
+Taken at least once:14.87% of 417
+Calls executed:11.34% of 97
+Creating 'dominion.c.gcov'
+
+
+cardtest4.c:
+****************************************
+            Adventurer Card Test              
+****************************************
+Test 1: Current player should receive 2 cards
+	Hand count = 6, expected = 7
+	Hand count did not increase correctly
+FAILED
+
+Test 2: The two new cards should be treasure cards
+	The two added cards were not treasures or a previous test failed
+FAILED
+
+Test 3: Check that the drawn cards have been discarded
+	Incorrect number of cards was discarded or a previous test failed
+FAILED
+
+Test 4: No state change should occur of the other players
+	Current player: 0, expected 0
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+	Make sure the other player's hand was not touched
+	The other player's hand was not effected.
+PASS
+
+Test 5: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+File 'dominion.c'
+Lines executed:18.95% of 570
+Branches executed:22.78% of 417
+Taken at least once:13.91% of 417
+Calls executed:10.31% of 97
+Creating 'dominion.c.gcov'
+
+
+unittest1.c:
+**********************************************
+             updateCoins Function Test							
+**********************************************
+Test 1: Check adding coppers for all players and bonus amounts
+	Coppers were added correctly
+PASS
+
+Test 2: Check adding silvers for all players and bonus amounts
+	Silvers were added correctly
+PASS
+
+Test 3: Check adding golds for all players and bonus amounts
+	Golds were added correctly
+PASS
+
+Test 4: Check that a non-treasure card was not added for all players and bonus amounts
+	Empties were added correctly
+PASS
+
+File 'dominion.c'
+Lines executed:15.96% of 570
+Branches executed:15.83% of 417
+Taken at least once:13.43% of 417
+Calls executed:7.22% of 97
+Creating 'dominion.c.gcov'
+
+
+unittest2.c:
+**********************************************
+             buyCard Function Test							
+**********************************************
+Test 1: Checking that the phase stays in the buying phase
+	Phase is "buying"
+PASS
+
+Test 2: Check that nothing can be bought if there aren't enough buys
+	Correct response to 0 buys
+PASS
+
+Test 3: Check that nothing can be bought if the supply count for that card is < 1
+	Correct response to 0 supply count
+PASS
+
+Test 4: Check that nothing can be bought if the player doesn't have enought coins
+	Correct response to insufficient money
+PASS
+
+Test 5: Check that the bought card goes into the discard pile
+	Bought card successfully went to the discard pile
+PASS
+
+Test 6: Check that the supply count decreased by 1
+	The supply count decreased correctly
+PASS
+
+Test 7:Check that the correct amount of coins decreased
+	Correct number of coins were removed
+PASS
+
+File 'dominion.c'
+Lines executed:20.18% of 570
+Branches executed:25.42% of 417
+Taken at least once:15.35% of 417
+Calls executed:12.37% of 97
+Creating 'dominion.c.gcov'
+
+
+unittest3.c:
+**********************************************
+             playCard Function Test							
+**********************************************
+Test 1: Check it only plays a card in the Action phase
+	Correct response to non-Action phase
+PASS
+
+Test 2: Check that a card can be played only if there are enough actions
+	Correct response to 0 Actions
+PASS
+
+Test 3: Check that an action/non-action card can be recognized
+	Identified the action card
+PASS
+
+	Identified the non-action card
+PASS
+
+Test 4: Check that the number of actions decreases.
+	Number of current actions was correct
+PASS
+
+Test 5: Check that money bonus' get added to the total coins
+	Bonus coins were not added correctly
+FAILED
+
+File 'dominion.c'
+Lines executed:24.39% of 570
+Branches executed:26.62% of 417
+Taken at least once:17.27% of 417
+Calls executed:16.49% of 97
+Creating 'dominion.c.gcov'
+
+
+unittest4.c:
+**********************************************
+             discardCard Function Test							
+**********************************************
+Test 1: If the trashFlag is set, the card should not go into the played pile
+	Card was not put in the played pile
+PASS
+
+Test 2: If the trashflag is not set, the card should go into the played pile
+	The played card count increased
+PASS
+
+	Card was put in the played pile
+PASS
+
+Test 3: Check if the card was removed from the hand
+	Hand count decreased successfully
+PASS
+
+	Card was not in hand
+PASS
+
+File 'dominion.c'
+Lines executed:17.72% of 570
+Branches executed:17.27% of 417
+Taken at least once:13.91% of 417
+Calls executed:7.22% of 97
+Creating 'dominion.c.gcov'
+

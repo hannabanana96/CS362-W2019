@@ -1,0 +1,175 @@
+        -:    0:Source:cardtest1.c
+        -:    0:Graph:cardtest1.gcno
+        -:    0:Data:cardtest1.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    0:Source is newer than graph
+        -:    1:#include "dominion.h"
+        -:    2:#include "dominion_helpers.h"
+        -:    3:#include <string.h>
+        -:    4:#include <stdio.h>
+        -:    5:#include <assert.h>
+        -:    6:#include "rngs.h"
+        -:    7:#include <stdlib.h>
+        -:    8:
+        -:    9:#define TESTCARD "Smithy"
+        -:   10:
+        -:   11:
+        -:   12:
+        -:   13://returns 0 if the two numbers are the same
+        -:   14://returns 1 if the two numbers are different
+       50:   15:int pass_or_fail(int a, int b){
+       50:   16:	if (a == b){
+       48:   17:		return 0;
+        -:   18:	}
+        -:   19:
+        -:   20:	else{
+        2:   21:		return 1;
+        -:   22:	}	
+        -:   23:}
+        -:   24:
+        -:   25:
+        1:   26:int main() {
+        1:   27:	int seed = 500;
+        1:   28:	int numPlayers = 2;
+        -:   29:	struct gameState G, testG;
+        1:   30:	int k[10] = {adventurer, embargo, village, minion, mine, 
+        -:   31:					 cutpurse, sea_hag, tribute, smithy, council_room};
+        1:   32:	int handpos = 0, choice1 = 0, choice2 = 0, choice3 = 0, bonus = 0;
+        1:   33:	int newCards = 0;
+        1:   34:	int discarded = 1;
+        1:   35:	int thisPlayer = 0;
+        1:   36:	int shuffledCards = 0;
+        1:   37:	int result = 0;
+        -:   38:
+        -:   39:	//start game
+        1:   40:	initializeGame(numPlayers, k, seed, &G);
+        -:   41:
+        1:   42:	printf("****************************************\n");
+        1:   43:	printf("            %s Card Test              \n", TESTCARD);
+        1:   44:	printf("****************************************\n");
+        -:   45:
+        -:   46:
+        -:   47:	/************************** TEST 1 ***************************/
+        1:   48:	printf("Test 1: Current player should receive 3 cards\n");
+        -:   49:
+        -:   50:	//copy the state of the game for later comparison
+        1:   51:	memcpy(&testG, &G, sizeof(struct gameState));
+        -:   52:	
+        -:   53:	//get card outcomes
+        1:   54:	cardEffect(smithy, choice1, choice2, choice3, &testG, handpos, &bonus);
+        -:   55:
+        -:   56:	//three cards should be added to the hand
+        1:   57:	newCards = 3;
+        1:   58:	printf("	Hand count = %d, expected = %d\n", testG.handCount[thisPlayer], 
+        1:   59:												G.handCount[thisPlayer] + newCards - discarded);
+        1:   60:	result = pass_or_fail(testG.handCount[thisPlayer], 
+        1:   61:								 G.handCount[thisPlayer] + newCards - discarded);	
+        -:   62:
+        1:   63:	if (result == 1){
+        1:   64:		printf("	The number cards in hand did not increase by 3\n");
+        1:   65:		printf("FAILED\n\n");
+        -:   66:	}
+        -:   67:
+        1:   68:	if (result == 0){
+    #####:   69:		printf("	The number of cards in hand is correct\n");
+    #####:   70:		printf("PASS\n\n");
+        -:   71:	}
+        -:   72:
+        -:   73:	/**************************** TEST 2 **************************/
+        1:   74:	printf("Test 2: Current deck should decrease by 3 cards\n");
+        -:   75:
+        -:   76:	//deck count should decrease by three
+        1:   77:	printf("	Deck count = %d, expected = %d\n", testG.deckCount[thisPlayer],
+        1:   78:												G.deckCount[thisPlayer] - newCards + shuffledCards);
+        1:   79:	result = pass_or_fail(testG.deckCount[thisPlayer], 
+        1:   80:								 G.deckCount[thisPlayer] - newCards + shuffledCards);
+        -:   81:
+        1:   82:	if (result == 1){
+        1:   83:		printf("	The deck did not decrease by 3\n");
+        1:   84:		printf("FAILED\n\n");
+        -:   85:	}
+        -:   86:	
+        1:   87:	if (result == 0){
+    #####:   88:		printf("	The deck did decrease by 3\n");
+    #####:   89:		printf("PASS\n\n");
+        -:   90:	}
+        -:   91:
+        -:   92:	/*************************** TEST 3 *******************************/
+        1:   93:	printf("Test 3: No state change should occur of the other players\n");
+        -:   94:
+        -:   95:	//checks who the game thinks is the current player
+        1:   96:	printf("	Current player: %d, expected %d\n", testG.whoseTurn, G.whoseTurn);
+        1:   97:	result = pass_or_fail(testG.whoseTurn, G.whoseTurn);
+        1:   98:	if (result == 1){
+    #####:   99:		printf("	The current player is incorrect\n");
+    #####:  100:		printf("FAILED\n\n");
+        -:  101:	}
+        -:  102:
+        1:  103:	if (result == 0){
+        1:  104:		printf("	The current player is correct \n");
+        1:  105:		printf("PASS\n\n");
+        -:  106:	}
+        -:  107:
+        1:  108:	int i = 0;
+        1:  109:	int flag = 0;
+        -:  110:	//set flag if the other players deck cards are not the same as they were previously
+        1:  111:	printf("	Make sure the other player's deck was not touched\n");
+       11:  112:	for(i = 0; i < 10; i++){
+       10:  113:		result = pass_or_fail(testG.deck[1][i], G.deck[1][i]); 
+       10:  114:		if(result == 1){
+    #####:  115:			flag = 1;
+    #####:  116:			break;
+        -:  117:		}
+        -:  118:	}	
+        1:  119:	if(flag == 1){
+    #####:  120:		printf("	The other player's deck was effected.\n");
+    #####:  121:		printf("FAILED\n\n");
+        -:  122:	}
+        1:  123:	if(flag == 0){
+        1:  124:		printf(" The other player's deck was not effected.\n");
+        1:  125:		printf("PASS\n\n");
+        -:  126:	}
+        -:  127:
+        1:  128:	flag = 0;
+        -:  129:	//set flag if the other players hand cards are not the same as they were previously
+        1:  130:	printf("	Make sure the other player's hand was not touched\n");
+       11:  131:	for(i = 0; i < 10; i++){
+       10:  132:		result = pass_or_fail(testG.hand[1][i], G.hand[1][i]); 
+       10:  133:		if(result == 1){
+    #####:  134:			flag = 1;
+    #####:  135:			break;
+        -:  136:		}
+        -:  137:	}	
+        -:  138:	
+        1:  139:	if(flag == 1){
+    #####:  140:		printf("	The other player's hand was effected.\n");
+    #####:  141:		printf("FAILED\n\n");
+        -:  142:	}
+        1:  143:	if(flag == 0){
+        1:  144:		printf("	The other player's hand was not effected.\n");
+        1:  145:		printf("PASS\n\n");
+        -:  146:	}
+        -:  147:
+        -:  148:	/*************************** TEST 4 *******************************/
+        1:  149:	printf("Test 4: The Victory and Kingdom cards should remain the same\n");
+        1:  150:	flag = 0;
+       28:  151:	for (i = 0; i < 27; i++){
+       27:  152:		result = pass_or_fail(testG.supplyCount[i], G.supplyCount[i]);
+       27:  153:		if(result == 1){
+    #####:  154:			flag = 1;
+    #####:  155:			break;
+        -:  156:		}
+        -:  157:	}
+        1:  158:	if(flag == 1){
+    #####:  159:		printf("	The Victory and Kingdom cards were changed.\n");
+    #####:  160:		printf("FAILED\n\n");
+        -:  161:	}
+        1:  162:	if(flag == 0){
+        1:  163:		printf("	The Victory and Kingdom cards were not changed.\n");
+        1:  164:		printf("PASS\n\n");
+        -:  165:	}
+        -:  166:
+        1:  167:	return 0;
+        -:  168:}
+        -:  169:

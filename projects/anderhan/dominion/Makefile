@@ -33,6 +33,49 @@ runtests: testDrawCard
 player: player.c interface.o
 	gcc -o player player.c -g  dominion.o rngs.o interface.o $(CFLAGS)
 
+unittestresults: cardtest1.c cardtest2.c cardtest3.c cardtest4.c unittest1.c unittest2.c unittest3.c unittest4.c dominion.c
+	echo "Results for running cardtests:" &> unittestresults.out
+	echo "cardtest1.c:" >> unittestresults.out
+	gcc -o cardtest1 cardtest1.c -g dominion.c rngs.o $(CFLAGS)
+	./cardtest1 >> unittestresults.out
+	gcov dominion.c -b >> unittestresults.out
+	echo >> unittestresults.out
+	echo "cardtest2.c:" >> unittestresults.out
+	gcc -o cardtest2 cardtest2.c -g dominion.c rngs.o $(CFLAGS)
+	./cardtest2 >> unittestresults.out
+	gcov dominion.c -b >> unittestresults.out
+	echo >> unittestresults.out
+	echo "cardtest3.c:" >> unittestresults.out
+	gcc -o cardtest3 cardtest3.c -g dominion.c rngs.o $(CFLAGS)
+	./cardtest3 >> unittestresults.out
+	gcov dominion.c -b >> unittestresults.out
+	echo >> unittestresults.out
+	echo "cardtest4.c:" >> unittestresults.out
+	gcc -o cardtest4 cardtest4.c -g dominion.c rngs.o $(CFLAGS)
+	./cardtest4 >> unittestresults.out
+	gcov dominion.c -b >> unittestresults.out
+	echo >> unittestresults.out
+	echo "unittest1.c:" >> unittestresults.out
+	gcc -o unittest1 unittest1.c -g dominion.c rngs.o $(CFLAGS)
+	./unittest1 >> unittestresults.out
+	gcov dominion.c -b >> unittestresults.out
+	echo >> unittestresults.out
+	echo "unittest2.c:" >> unittestresults.out
+	gcc -o unittest2 unittest2.c -g dominion.c rngs.o $(CFLAGS)
+	./unittest2 >> unittestresults.out
+	gcov dominion.c -b >> unittestresults.out
+	echo >> unittestresults.out
+	echo "unittest3.c:" >> unittestresults.out
+	gcc -o unittest3 unittest3.c -g dominion.c rngs.o $(CFLAGS)
+	./unittest3 >> unittestresults.out
+	gcov dominion.c -b >> unittestresults.out
+	echo >> unittestresults.out
+	echo "unittest4.c:" >> unittestresults.out
+	gcc -o unittest4 unittest4.c -g dominion.c rngs.o $(CFLAGS)
+	./unittest4 >> unittestresults.out
+	gcov dominion.c -b >> unittestresults.out
+	
+
 all: playdom player 
 
 clean:
