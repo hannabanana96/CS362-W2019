@@ -1,0 +1,184 @@
+        -:    0:Source:testme.c
+        -:    0:Graph:testme.gcno
+        -:    0:Data:testme.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include<stdio.h>
+        -:    2:#include<string.h>
+        -:    3:#include<stdlib.h>
+        -:    4:#include<time.h>
+        -:    5:
+        -:    6://Grabs a random character from a preset input pool
+function inputChar called 24 returned 100% blocks executed 100%
+       24:    7:char inputChar(){
+       24:    8:	int n = 0;
+        -:    9:
+        -:   10:	//input pool
+       24:   11:	char c_inputs[9] = {'[', '(', '{', ' ', 'a', 'x', '}', ')', ']'};
+        -:   12:
+        -:   13:	//gets a random number from 0-8
+       24:   14:	n = rand() % 9;
+call    0 returned 100%
+        -:   15:
+        -:   16:	//returns the character corresponding to the random number
+       24:   17:	return c_inputs[n];
+        -:   18:}
+        -:   19:
+        -:   20:
+        -:   21://Returns either "reset" or "nope!"
+function inputString called 24 returned 100% blocks executed 100%
+       24:   22:char* inputString(){
+       24:   23:	int n = 0;
+        -:   24:
+        -:   25:	//limiting options between "nope!" and "reset"
+       24:   26:	char option1[6] = "nope!";
+       24:   27:	char option2[6] = "reset";
+        -:   28:
+        -:   29:	//gets a random number from 0-1
+       24:   30:	n = rand() % 2;
+call    0 returned 100%
+        -:   31:
+       24:   32:	if (n == 0)
+branch  0 taken 38% (fallthrough)
+branch  1 taken 63%
+        9:   33:		return option1;
+        -:   34:
+        -:   35:	else
+       15:   36:		return option2;
+        -:   37:}
+        -:   38:
+        -:   39:
+function testme called 1 returned 100% blocks executed 84%
+        1:   40:int testme(int num)
+        -:   41:{
+        1:   42:  int tcCount = 0;
+        -:   43:  char *s;
+        -:   44:  char c;
+        1:   45:  int state = 0, prev_state = 0;
+        -:   46:  while (1){
+       24:   47:    tcCount++;
+       24:   48:    c = inputChar();
+call    0 returned 100%
+       24:   49:    s = inputString();
+call    0 returned 100%
+       24:   50:    printf("Iteration %d: c = %c, s = %s, state = %d\n", tcCount, c, s, state);
+call    0 returned 100%
+        -:   51:	
+       24:   52:	 prev_state = state;
+        -:   53:	
+       24:   54:    if (c == '[' && state == 0) state = 1;
+branch  0 taken 17% (fallthrough)
+branch  1 taken 83%
+branch  2 taken 25% (fallthrough)
+branch  3 taken 75%
+       24:   55:    if (c == '(' && state == 1) state = 2;
+branch  0 taken 8% (fallthrough)
+branch  1 taken 92%
+branch  2 taken 50% (fallthrough)
+branch  3 taken 50%
+       24:   56:    if (c == '{' && state == 2) state = 3;
+branch  0 taken 4% (fallthrough)
+branch  1 taken 96%
+branch  2 taken 100% (fallthrough)
+branch  3 taken 0%
+        -:   57:    
+        -:   58:	 //if "1" is on the command line, change the state to something unexpected
+       24:   59:	 if (c == ' ' && state == 3){
+branch  0 taken 8% (fallthrough)
+branch  1 taken 92%
+branch  2 taken 50% (fallthrough)
+branch  3 taken 50%
+        1:   60:		 if (num == 1){
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        1:   61:		 	state = 1;
+        -:   62:		 }
+        -:   63:		 else{
+    #####:   64:			 state = 4;
+        -:   65:		 }
+        -:   66:	 	}
+       24:   67:    if (c == 'a' && state == 4) state = 5;
+branch  0 taken 17% (fallthrough)
+branch  1 taken 83%
+branch  2 taken 0% (fallthrough)
+branch  3 taken 100%
+       24:   68:    if (c == 'x' && state == 5) state = 6;
+branch  0 taken 8% (fallthrough)
+branch  1 taken 92%
+branch  2 taken 0% (fallthrough)
+branch  3 taken 100%
+       24:   69:    if (c == '}' && state == 6) state = 7;
+branch  0 taken 13% (fallthrough)
+branch  1 taken 88%
+branch  2 taken 0% (fallthrough)
+branch  3 taken 100%
+       24:   70:    if (c == ')' && state == 7) state = 8;
+branch  0 taken 21% (fallthrough)
+branch  1 taken 79%
+branch  2 taken 0% (fallthrough)
+branch  3 taken 100%
+       24:   71:    if (c == ']' && state == 8) state = 9;
+branch  0 taken 4% (fallthrough)
+branch  1 taken 96%
+branch  2 taken 0% (fallthrough)
+branch  3 taken 100%
+       24:   72:    if (s[0] == 'r' && s[1] == 'e' && s[2] == 's' && s[3] == 'e'
+branch  0 taken 63% (fallthrough)
+branch  1 taken 38%
+branch  2 taken 100% (fallthrough)
+branch  3 taken 0%
+branch  4 taken 100% (fallthrough)
+branch  5 taken 0%
+branch  6 taken 100% (fallthrough)
+branch  7 taken 0%
+       15:   73:        && s[4] == 't' && s[5] == '\0' && state == 9){
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+branch  2 taken 100% (fallthrough)
+branch  3 taken 0%
+branch  4 taken 0% (fallthrough)
+branch  5 taken 100%
+        -:   74://		 Commenting out these lines because I am not using them to show an error
+    #####:   75:		 printf("PASS \n");
+call    0 never executed
+        -:   76:		 //exit(200);	
+    #####:   77:		 return 0;
+        -:   78:    }
+        -:   79:	
+       24:   80:	 if ((state != prev_state) && (state != prev_state + 1)){
+branch  0 taken 17% (fallthrough)
+branch  1 taken 83%
+branch  2 taken 25% (fallthrough)
+branch  3 taken 75%
+        1:   81:		 printf("Current state: %d\nExpected state: %d or %d\n", state, prev_state, prev_state+1);
+call    0 returned 100%
+        1:   82:	  	 printf("Incorrect state, exiting program\n");
+call    0 returned 100%
+        1:   83:		 printf("FAILED\n"); 
+call    0 returned 100%
+        1:   84:		 return 0;
+        -:   85:	 }
+       23:   86:  }
+        -:   87:}
+        -:   88:
+        -:   89://0 -> making sure the whole logic/branches work
+        -:   90://1 -> making sure if a state is incorrect my test finds it
+        -:   91:
+function main called 1 returned 100% blocks executed 100%
+        1:   92:int main(int argc, char *argv[])
+        -:   93:{
+        1:   94:    srand(time(NULL));
+call    0 returned 100%
+call    1 returned 100%
+        1:   95:	 printf("input from user: %s\n", argv[1]);
+call    0 returned 100%
+        1:   96:	 int a = 0;
+        1:   97:	 a = atoi(argv[1]);
+call    0 returned 100%
+        1:   98:	 printf("a: %d\n", a);
+call    0 returned 100%
+        -:   99:			
+        1:  100:    testme(a);
+call    0 returned 100%
+        1:  101:    return 0;
+        -:  102:}

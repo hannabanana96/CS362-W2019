@@ -1,0 +1,90 @@
+Test 1: Testing that program reaches its end with random inputs\n
+        (without modification)
+input from user: 0
+a: 0
+Iteration 1: c = ), s = reset, state = 0
+Iteration 2: c = a, s = reset, state = 0
+Iteration 3: c = a, s = reset, state = 0
+Iteration 4: c = [, s = reset, state = 0
+Iteration 5: c = [, s = reset, state = 1
+Iteration 6: c = }, s = reset, state = 1
+Iteration 7: c = a, s = reset, state = 1
+Iteration 8: c =  , s = nope!, state = 1
+Iteration 9: c = ), s = nope!, state = 1
+Iteration 10: c = x, s = reset, state = 1
+Iteration 11: c = }, s = reset, state = 1
+Iteration 12: c = (, s = nope!, state = 1
+Iteration 13: c = {, s = nope!, state = 2
+Iteration 14: c = ), s = nope!, state = 3
+Iteration 15: c = ), s = nope!, state = 3
+Iteration 16: c = [, s = nope!, state = 3
+Iteration 17: c = [, s = nope!, state = 3
+Iteration 18: c = ), s = reset, state = 3
+Iteration 19: c = a, s = nope!, state = 3
+Iteration 20: c = (, s = reset, state = 3
+Iteration 21: c = x, s = reset, state = 3
+Iteration 22: c = }, s = reset, state = 3
+Iteration 23: c = ], s = reset, state = 3
+Iteration 24: c =  , s = reset, state = 3
+Iteration 25: c = {, s = reset, state = 4
+Iteration 26: c = a, s = reset, state = 4
+Iteration 27: c = ), s = nope!, state = 5
+Iteration 28: c = ], s = reset, state = 5
+Iteration 29: c =  , s = nope!, state = 5
+Iteration 30: c = {, s = reset, state = 5
+Iteration 31: c = ), s = nope!, state = 5
+Iteration 32: c = {, s = nope!, state = 5
+Iteration 33: c = x, s = reset, state = 5
+Iteration 34: c = [, s = nope!, state = 6
+Iteration 35: c = ), s = nope!, state = 6
+Iteration 36: c = }, s = nope!, state = 6
+Iteration 37: c = ), s = reset, state = 7
+Iteration 38: c = ], s = nope!, state = 8
+Iteration 39: c = ], s = reset, state = 9
+PASS 
+File 'testme.c'
+Lines executed:90.20% of 51
+Branches executed:100.00% of 58
+Taken at least once:87.93% of 58
+Calls executed:80.00% of 15
+Creating 'testme.c.gcov'
+
+
+Test 2: Test that an incorrect state iteration can be caught\n
+input from user: 1
+a: 1
+Iteration 1: c = ), s = reset, state = 0
+Iteration 2: c = a, s = reset, state = 0
+Iteration 3: c = a, s = reset, state = 0
+Iteration 4: c = [, s = reset, state = 0
+Iteration 5: c = [, s = reset, state = 1
+Iteration 6: c = }, s = reset, state = 1
+Iteration 7: c = a, s = reset, state = 1
+Iteration 8: c =  , s = nope!, state = 1
+Iteration 9: c = ), s = nope!, state = 1
+Iteration 10: c = x, s = reset, state = 1
+Iteration 11: c = }, s = reset, state = 1
+Iteration 12: c = (, s = nope!, state = 1
+Iteration 13: c = {, s = nope!, state = 2
+Iteration 14: c = ), s = nope!, state = 3
+Iteration 15: c = ), s = nope!, state = 3
+Iteration 16: c = [, s = nope!, state = 3
+Iteration 17: c = [, s = nope!, state = 3
+Iteration 18: c = ), s = reset, state = 3
+Iteration 19: c = a, s = nope!, state = 3
+Iteration 20: c = (, s = reset, state = 3
+Iteration 21: c = x, s = reset, state = 3
+Iteration 22: c = }, s = reset, state = 3
+Iteration 23: c = ], s = reset, state = 3
+Iteration 24: c =  , s = reset, state = 3
+Current state: 1
+Expected state: 3 or 4
+Incorrect state, exiting program
+FAILED
+File 'testme.c'
+Lines executed:94.12% of 51
+Branches executed:100.00% of 58
+Taken at least once:77.59% of 58
+Calls executed:93.33% of 15
+Creating 'testme.c.gcov'
+
