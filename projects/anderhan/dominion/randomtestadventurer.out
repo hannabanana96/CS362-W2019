@@ -1,0 +1,3312 @@
+Results for running Adventurer random tests:
+randomtestadventurer.c:
+*******************************************************
+               Adventurer Random Test                  
+*******************************************************
+Test scenario:
+Num of players: 3
+Player: 0, deckCount: 415, handCount: 4
+Test 1: Current player should receive 2 cards
+	Hand count = 5, expected = 6, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards(numerical version): 6, 0
+	The one or both of the added cards were not treasures
+FAIL
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 415, 399
+	# of discarded cards: 15, expected: 14
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 0, expected 0
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 2
+Player: 1, deckCount: 249, handCount: 1
+Test 1: Current player should receive 2 cards
+	Hand count = 2, expected = 3, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards(numerical version): 6, 0
+	The one or both of the added cards were not treasures
+FAIL
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 249, 247
+	# of discarded cards: 1, expected: 0
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 1, expected 1
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 3
+Player: 0, deckCount: 418, handCount: 1
+Test 1: Current player should receive 2 cards
+	Hand count = 2, expected = 3, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards(numerical version): 5, 1
+	The one or both of the added cards were not treasures
+FAIL
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 418, 382
+	# of discarded cards: 35, expected: 34
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 0, expected 0
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 2
+Player: 0, deckCount: 433, handCount: 4
+Test 1: Current player should receive 2 cards
+	Hand count = 5, expected = 6, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards(numerical version): 4, 0
+	The one or both of the added cards were not treasures
+FAIL
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 433, 428
+	# of discarded cards: 4, expected: 3
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 0, expected 0
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 3
+Player: 2, deckCount: 349, handCount: 4
+Test 1: Current player should receive 2 cards
+	Hand count = 5, expected = 6, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards(numerical version): 4, 0
+	The one or both of the added cards were not treasures
+FAIL
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 349, 335
+	# of discarded cards: 13, expected: 12
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 2, expected 2
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 3
+Player: 1, deckCount: 130, handCount: 2
+Test 1: Current player should receive 2 cards
+	Hand count = 3, expected = 4, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards(numerical version): 5, 0
+	The one or both of the added cards were not treasures
+FAIL
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 130, 127
+	# of discarded cards: 2, expected: 1
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 1, expected 1
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 2
+Player: 0, deckCount: 208, handCount: 1
+Test 1: Current player should receive 2 cards
+	Hand count = 2, expected = 3, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards: gold, copper
+	The added cards were treasures
+PASS
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 208, 206
+	# of discarded cards: 1, expected: 0
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 0, expected 0
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 3
+Player: 2, deckCount: 435, handCount: 3
+Test 1: Current player should receive 2 cards
+	Hand count = 4, expected = 5, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards: silver, copper
+	The added cards were treasures
+PASS
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 435, 431
+	# of discarded cards: 3, expected: 2
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 2, expected 2
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 2
+Player: 0, deckCount: 149, handCount: 4
+Test 1: Current player should receive 2 cards
+	Hand count = 5, expected = 6, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards(numerical version): 5, 0
+	The one or both of the added cards were not treasures
+FAIL
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 149, 138
+	# of discarded cards: 10, expected: 9
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 0, expected 0
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 2
+Player: 0, deckCount: 225, handCount: 3
+Test 1: Current player should receive 2 cards
+	Hand count = 4, expected = 5, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards(numerical version): 6, 1
+	The one or both of the added cards were not treasures
+FAIL
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 225, 223
+	# of discarded cards: 1, expected: 0
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 0, expected 0
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 2
+Player: 1, deckCount: 240, handCount: 4
+Test 1: Current player should receive 2 cards
+	Hand count = 5, expected = 6, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards(numerical version): 6, 0
+	The one or both of the added cards were not treasures
+FAIL
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 240, 235
+	# of discarded cards: 4, expected: 3
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 1, expected 1
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 3
+Player: 1, deckCount: 373, handCount: 2
+Test 1: Current player should receive 2 cards
+	Hand count = 3, expected = 4, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards(numerical version): 4, 0
+	The one or both of the added cards were not treasures
+FAIL
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 373, 367
+	# of discarded cards: 5, expected: 4
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 1, expected 1
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 3
+Player: 2, deckCount: 328, handCount: 2
+Test 1: Current player should receive 2 cards
+	Hand count = 3, expected = 4, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards: gold, silver
+	The added cards were treasures
+PASS
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 328, 319
+	# of discarded cards: 8, expected: 7
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 2, expected 2
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 2
+Player: 0, deckCount: 148, handCount: 4
+Test 1: Current player should receive 2 cards
+	Hand count = 5, expected = 6, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards(numerical version): 5, 0
+	The one or both of the added cards were not treasures
+FAIL
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 148, 138
+	# of discarded cards: 9, expected: 8
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 0, expected 0
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 2
+Player: 1, deckCount: 57, handCount: 4
+Test 1: Current player should receive 2 cards
+	Hand count = 5, expected = 6, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards(numerical version): 5, 0
+	The one or both of the added cards were not treasures
+FAIL
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 57, 54
+	# of discarded cards: 2, expected: 1
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 1, expected 1
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 2
+Player: 0, deckCount: 33, handCount: 4
+Test 1: Current player should receive 2 cards
+	Hand count = 5, expected = 6, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards(numerical version): 5, 0
+	The one or both of the added cards were not treasures
+FAIL
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 33, 22
+	# of discarded cards: 10, expected: 9
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 0, expected 0
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 3
+Player: 1, deckCount: 237, handCount: 4
+Test 1: Current player should receive 2 cards
+	Hand count = 5, expected = 6, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards(numerical version): 5, 0
+	The one or both of the added cards were not treasures
+FAIL
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 237, 226
+	# of discarded cards: 10, expected: 9
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 1, expected 1
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 3
+Player: 2, deckCount: 49, handCount: 4
+Test 1: Current player should receive 2 cards
+	Hand count = 5, expected = 6, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards(numerical version): 6, 0
+	The one or both of the added cards were not treasures
+FAIL
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 49, 48
+	# of discarded cards: 0, expected: -1
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 2, expected 2
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 2
+Player: 1, deckCount: 131, handCount: 5
+Test 1: Current player should receive 2 cards
+	Hand count = 6, expected = 7, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards(numerical version): 4, 0
+	The one or both of the added cards were not treasures
+FAIL
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 131, 113
+	# of discarded cards: 17, expected: 16
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 1, expected 1
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 3
+Player: 2, deckCount: 96, handCount: 2
+Test 1: Current player should receive 2 cards
+	Hand count = 3, expected = 4, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards: copper, silver
+	The added cards were treasures
+PASS
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 96, 93
+	# of discarded cards: 2, expected: 1
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 2, expected 2
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 2
+Player: 0, deckCount: 187, handCount: 5
+Test 1: Current player should receive 2 cards
+	Hand count = 6, expected = 7, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards(numerical version): 5, 0
+	The one or both of the added cards were not treasures
+FAIL
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 187, 174
+	# of discarded cards: 12, expected: 11
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 0, expected 0
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 2
+Player: 1, deckCount: 274, handCount: 3
+Test 1: Current player should receive 2 cards
+	Hand count = 4, expected = 5, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards: silver, silver
+	The added cards were treasures
+PASS
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 274, 273
+	# of discarded cards: 0, expected: -1
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 1, expected 1
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 2
+Player: 1, deckCount: 289, handCount: 4
+Test 1: Current player should receive 2 cards
+	Hand count = 5, expected = 6, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards: copper, copper
+	The added cards were treasures
+PASS
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 289, 281
+	# of discarded cards: 7, expected: 6
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 1, expected 1
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 3
+Player: 0, deckCount: 486, handCount: 3
+Test 1: Current player should receive 2 cards
+	Hand count = 4, expected = 5, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards: gold, copper
+	The added cards were treasures
+PASS
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 486, 477
+	# of discarded cards: 8, expected: 7
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 0, expected 0
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 3
+Player: 1, deckCount: 250, handCount: 5
+Test 1: Current player should receive 2 cards
+	Hand count = 6, expected = 7, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards(numerical version): 4, 0
+	The one or both of the added cards were not treasures
+FAIL
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 250, 248
+	# of discarded cards: 1, expected: 0
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 1, expected 1
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 2
+Player: 1, deckCount: 155, handCount: 2
+Test 1: Current player should receive 2 cards
+	Hand count = 3, expected = 4, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards: silver, silver
+	The added cards were treasures
+PASS
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 155, 150
+	# of discarded cards: 4, expected: 3
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 1, expected 1
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 3
+Player: 0, deckCount: 69, handCount: 4
+Test 1: Current player should receive 2 cards
+	Hand count = 5, expected = 6, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards: silver, silver
+	The added cards were treasures
+PASS
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 69, 54
+	# of discarded cards: 14, expected: 13
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 0, expected 0
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 3
+Player: 1, deckCount: 220, handCount: 2
+Test 1: Current player should receive 2 cards
+	Hand count = 3, expected = 4, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards: gold, silver
+	The added cards were treasures
+PASS
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 220, 206
+	# of discarded cards: 13, expected: 12
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 1, expected 1
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 3
+Player: 2, deckCount: 417, handCount: 5
+Test 1: Current player should receive 2 cards
+	Hand count = 6, expected = 7, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards(numerical version): 6, 0
+	The one or both of the added cards were not treasures
+FAIL
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 417, 414
+	# of discarded cards: 2, expected: 1
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 2, expected 2
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 2
+Player: 0, deckCount: 147, handCount: 2
+Test 1: Current player should receive 2 cards
+	Hand count = 3, expected = 4, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards: gold, copper
+	The added cards were treasures
+PASS
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 147, 141
+	# of discarded cards: 5, expected: 4
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 0, expected 0
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 2
+Player: 0, deckCount: 57, handCount: 4
+Test 1: Current player should receive 2 cards
+	Hand count = 5, expected = 6, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards: silver, silver
+	The added cards were treasures
+PASS
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 57, 55
+	# of discarded cards: 1, expected: 0
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 0, expected 0
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 2
+Player: 0, deckCount: 405, handCount: 1
+Test 1: Current player should receive 2 cards
+	Hand count = 2, expected = 3, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards(numerical version): 5, 1
+	The one or both of the added cards were not treasures
+FAIL
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 405, 404
+	# of discarded cards: 0, expected: -1
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 0, expected 0
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 3
+Player: 2, deckCount: 25, handCount: 2
+Test 1: Current player should receive 2 cards
+	Hand count = 3, expected = 4, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards(numerical version): 6, 7
+	The one or both of the added cards were not treasures
+FAIL
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 25, 9
+	# of discarded cards: 15, expected: 14
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 2, expected 2
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 2
+Player: 1, deckCount: 229, handCount: 3
+Test 1: Current player should receive 2 cards
+	Hand count = 4, expected = 5, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards(numerical version): 5, 7
+	The one or both of the added cards were not treasures
+FAIL
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 229, 223
+	# of discarded cards: 5, expected: 4
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 1, expected 1
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 2
+Player: 1, deckCount: 206, handCount: 5
+Test 1: Current player should receive 2 cards
+	Hand count = 6, expected = 7, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards(numerical version): 4, 0
+	The one or both of the added cards were not treasures
+FAIL
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 206, 202
+	# of discarded cards: 3, expected: 2
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 1, expected 1
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 2
+Player: 0, deckCount: 228, handCount: 3
+Test 1: Current player should receive 2 cards
+	Hand count = 4, expected = 5, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards: gold, copper
+	The added cards were treasures
+PASS
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 228, 226
+	# of discarded cards: 1, expected: 0
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 0, expected 0
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 3
+Player: 2, deckCount: 340, handCount: 5
+Test 1: Current player should receive 2 cards
+	Hand count = 6, expected = 7, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards(numerical version): 4, 0
+	The one or both of the added cards were not treasures
+FAIL
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 340, 325
+	# of discarded cards: 14, expected: 13
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 2, expected 2
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 2
+Player: 1, deckCount: 21, handCount: 4
+Test 1: Current player should receive 2 cards
+	Hand count = 5, expected = 6, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards: gold, copper
+	The added cards were treasures
+PASS
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 21, 14
+	# of discarded cards: 6, expected: 5
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 1, expected 1
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 3
+Player: 1, deckCount: 343, handCount: 2
+Test 1: Current player should receive 2 cards
+	Hand count = 3, expected = 4, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards: copper, silver
+	The added cards were treasures
+PASS
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 343, 336
+	# of discarded cards: 6, expected: 5
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 1, expected 1
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 2
+Player: 0, deckCount: 276, handCount: 3
+Test 1: Current player should receive 2 cards
+	Hand count = 4, expected = 5, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards: gold, copper
+	The added cards were treasures
+PASS
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 276, 275
+	# of discarded cards: 0, expected: -1
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 0, expected 0
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 3
+Player: 2, deckCount: 71, handCount: 4
+Test 1: Current player should receive 2 cards
+	Hand count = 5, expected = 6, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards: silver, copper
+	The added cards were treasures
+PASS
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 71, 60
+	# of discarded cards: 10, expected: 9
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 2, expected 2
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 2
+Player: 1, deckCount: 23, handCount: 4
+Test 1: Current player should receive 2 cards
+	Hand count = 5, expected = 6, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards: copper, copper
+	The added cards were treasures
+PASS
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 23, 22
+	# of discarded cards: 0, expected: -1
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 1, expected 1
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 3
+Player: 2, deckCount: 243, handCount: 4
+Test 1: Current player should receive 2 cards
+	Hand count = 5, expected = 6, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards: copper, copper
+	The added cards were treasures
+PASS
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 243, 230
+	# of discarded cards: 12, expected: 11
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 2, expected 2
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 3
+Player: 0, deckCount: 460, handCount: 3
+Test 1: Current player should receive 2 cards
+	Hand count = 4, expected = 5, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards: copper, copper
+	The added cards were treasures
+PASS
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 460, 457
+	# of discarded cards: 2, expected: 1
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 0, expected 0
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 2
+Player: 0, deckCount: 326, handCount: 3
+Test 1: Current player should receive 2 cards
+	Hand count = 4, expected = 5, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards: copper, copper
+	The added cards were treasures
+PASS
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 326, 323
+	# of discarded cards: 2, expected: 1
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 0, expected 0
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 3
+Player: 0, deckCount: 24, handCount: 1
+Test 1: Current player should receive 2 cards
+	Hand count = 2, expected = 3, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards(numerical version): 6, 1
+	The one or both of the added cards were not treasures
+FAIL
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 24, 23
+	# of discarded cards: 0, expected: -1
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 0, expected 0
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 2
+Player: 0, deckCount: 461, handCount: 5
+Test 1: Current player should receive 2 cards
+	Hand count = 6, expected = 7, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards(numerical version): 5, 0
+	The one or both of the added cards were not treasures
+FAIL
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 461, 457
+	# of discarded cards: 3, expected: 2
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 0, expected 0
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 2
+Player: 1, deckCount: 209, handCount: 4
+Test 1: Current player should receive 2 cards
+	Hand count = 5, expected = 6, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards: copper, copper
+	The added cards were treasures
+PASS
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 209, 206
+	# of discarded cards: 2, expected: 1
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 1, expected 1
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 2
+Player: 1, deckCount: 486, handCount: 3
+Test 1: Current player should receive 2 cards
+	Hand count = 4, expected = 5, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards: silver, copper
+	The added cards were treasures
+PASS
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 486, 456
+	# of discarded cards: 29, expected: 28
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 1, expected 1
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 3
+Player: 1, deckCount: 123, handCount: 1
+Test 1: Current player should receive 2 cards
+	Hand count = 2, expected = 3, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards: silver, copper
+	The added cards were treasures
+PASS
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 123, 120
+	# of discarded cards: 2, expected: 1
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 1, expected 1
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 3
+Player: 2, deckCount: 385, handCount: 5
+Test 1: Current player should receive 2 cards
+	Hand count = 6, expected = 7, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards(numerical version): 6, 0
+	The one or both of the added cards were not treasures
+FAIL
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 385, 363
+	# of discarded cards: 21, expected: 20
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 2, expected 2
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 3
+Player: 1, deckCount: 369, handCount: 2
+Test 1: Current player should receive 2 cards
+	Hand count = 3, expected = 4, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards: copper, silver
+	The added cards were treasures
+PASS
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 369, 364
+	# of discarded cards: 4, expected: 3
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 1, expected 1
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 3
+Player: 0, deckCount: 30, handCount: 4
+Test 1: Current player should receive 2 cards
+	Hand count = 5, expected = 6, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards: silver, silver
+	The added cards were treasures
+PASS
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 30, 6
+	# of discarded cards: 23, expected: 22
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 0, expected 0
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 2
+Player: 0, deckCount: 414, handCount: 3
+Test 1: Current player should receive 2 cards
+	Hand count = 4, expected = 5, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards: copper, copper
+	The added cards were treasures
+PASS
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 414, 407
+	# of discarded cards: 6, expected: 5
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 0, expected 0
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 3
+Player: 1, deckCount: 157, handCount: 5
+Test 1: Current player should receive 2 cards
+	Hand count = 6, expected = 7, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards(numerical version): 4, 0
+	The one or both of the added cards were not treasures
+FAIL
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 157, 150
+	# of discarded cards: 6, expected: 5
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 1, expected 1
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 3
+Player: 1, deckCount: 456, handCount: 1
+Test 1: Current player should receive 2 cards
+	Hand count = 2, expected = 3, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards: copper, copper
+	The added cards were treasures
+PASS
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 456, 449
+	# of discarded cards: 6, expected: 5
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 1, expected 1
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 3
+Player: 2, deckCount: 159, handCount: 3
+Test 1: Current player should receive 2 cards
+	Hand count = 4, expected = 5, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards: gold, copper
+	The added cards were treasures
+PASS
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 159, 125
+	# of discarded cards: 33, expected: 32
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 2, expected 2
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 3
+Player: 2, deckCount: 29, handCount: 5
+Test 1: Current player should receive 2 cards
+	Hand count = 6, expected = 7, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards(numerical version): 6, 0
+	The one or both of the added cards were not treasures
+FAIL
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 29, 19
+	# of discarded cards: 9, expected: 8
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 2, expected 2
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 3
+Player: 1, deckCount: 493, handCount: 1
+Test 1: Current player should receive 2 cards
+	Hand count = 2, expected = 3, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards: gold, copper
+	The added cards were treasures
+PASS
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 493, 473
+	# of discarded cards: 19, expected: 18
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 1, expected 1
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 3
+Player: 2, deckCount: 206, handCount: 1
+Test 1: Current player should receive 2 cards
+	Hand count = 2, expected = 3, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards(numerical version): 6, 7
+	The one or both of the added cards were not treasures
+FAIL
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 206, 198
+	# of discarded cards: 7, expected: 6
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 2, expected 2
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 3
+Player: 2, deckCount: 132, handCount: 2
+Test 1: Current player should receive 2 cards
+	Hand count = 3, expected = 4, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards: silver, gold
+	The added cards were treasures
+PASS
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 132, 111
+	# of discarded cards: 20, expected: 19
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 2, expected 2
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 2
+Player: 0, deckCount: 422, handCount: 5
+Test 1: Current player should receive 2 cards
+	Hand count = 6, expected = 7, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards(numerical version): 5, 0
+	The one or both of the added cards were not treasures
+FAIL
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 422, 398
+	# of discarded cards: 23, expected: 22
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 0, expected 0
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 3
+Player: 1, deckCount: 209, handCount: 5
+Test 1: Current player should receive 2 cards
+	Hand count = 6, expected = 7, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards(numerical version): 5, 0
+	The one or both of the added cards were not treasures
+FAIL
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 209, 205
+	# of discarded cards: 3, expected: 2
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 1, expected 1
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 3
+Player: 2, deckCount: 297, handCount: 3
+Test 1: Current player should receive 2 cards
+	Hand count = 4, expected = 5, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards: copper, copper
+	The added cards were treasures
+PASS
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 297, 292
+	# of discarded cards: 4, expected: 3
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 2, expected 2
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 2
+Player: 0, deckCount: 3, handCount: 4
+Test 1: Current player should receive 2 cards
+	Hand count = 3, expected = 6, diff = 3
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards(numerical version): 18, 5
+	The one or both of the added cards were not treasures
+FAIL
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 3, 0
+	# of discarded cards: 4, expected: 1
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 0, expected 0
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 3
+Player: 2, deckCount: 34, handCount: 3
+Test 1: Current player should receive 2 cards
+	Hand count = 4, expected = 5, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards: silver, copper
+	The added cards were treasures
+PASS
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 34, 28
+	# of discarded cards: 5, expected: 4
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 2, expected 2
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 3
+Player: 1, deckCount: 11, handCount: 5
+Test 1: Current player should receive 2 cards
+	Hand count = 6, expected = 7, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards(numerical version): 6, 0
+	The one or both of the added cards were not treasures
+FAIL
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 11, 3
+	# of discarded cards: 7, expected: 6
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 1, expected 1
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 2
+Player: 0, deckCount: 430, handCount: 4
+Test 1: Current player should receive 2 cards
+	Hand count = 5, expected = 6, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards: silver, silver
+	The added cards were treasures
+PASS
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 430, 423
+	# of discarded cards: 6, expected: 5
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 0, expected 0
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 2
+Player: 0, deckCount: 290, handCount: 5
+Test 1: Current player should receive 2 cards
+	Hand count = 6, expected = 7, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards(numerical version): 4, 0
+	The one or both of the added cards were not treasures
+FAIL
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 290, 264
+	# of discarded cards: 25, expected: 24
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 0, expected 0
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 3
+Player: 1, deckCount: 408, handCount: 4
+Test 1: Current player should receive 2 cards
+	Hand count = 5, expected = 6, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards: gold, gold
+	The added cards were treasures
+PASS
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 408, 402
+	# of discarded cards: 5, expected: 4
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 1, expected 1
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 2
+Player: 0, deckCount: 322, handCount: 2
+Test 1: Current player should receive 2 cards
+	Hand count = 3, expected = 4, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards: gold, copper
+	The added cards were treasures
+PASS
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 322, 304
+	# of discarded cards: 17, expected: 16
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 0, expected 0
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 2
+Player: 1, deckCount: 97, handCount: 5
+Test 1: Current player should receive 2 cards
+	Hand count = 6, expected = 7, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards(numerical version): 4, 0
+	The one or both of the added cards were not treasures
+FAIL
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 97, 94
+	# of discarded cards: 2, expected: 1
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 1, expected 1
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 2
+Player: 0, deckCount: 164, handCount: 3
+Test 1: Current player should receive 2 cards
+	Hand count = 4, expected = 5, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards(numerical version): 6, 1
+	The one or both of the added cards were not treasures
+FAIL
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 164, 160
+	# of discarded cards: 3, expected: 2
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 0, expected 0
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 3
+Player: 0, deckCount: 136, handCount: 3
+Test 1: Current player should receive 2 cards
+	Hand count = 4, expected = 5, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards: gold, copper
+	The added cards were treasures
+PASS
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 136, 130
+	# of discarded cards: 5, expected: 4
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 0, expected 0
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 3
+Player: 2, deckCount: 75, handCount: 1
+Test 1: Current player should receive 2 cards
+	Hand count = 2, expected = 3, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards(numerical version): 6, 7
+	The one or both of the added cards were not treasures
+FAIL
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 75, 69
+	# of discarded cards: 5, expected: 4
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 2, expected 2
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 3
+Player: 1, deckCount: 263, handCount: 3
+Test 1: Current player should receive 2 cards
+	Hand count = 4, expected = 5, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards(numerical version): 6, 7
+	The one or both of the added cards were not treasures
+FAIL
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 263, 260
+	# of discarded cards: 2, expected: 1
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 1, expected 1
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 3
+Player: 0, deckCount: 334, handCount: 4
+Test 1: Current player should receive 2 cards
+	Hand count = 5, expected = 6, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards: copper, copper
+	The added cards were treasures
+PASS
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 334, 333
+	# of discarded cards: 0, expected: -1
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 0, expected 0
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 2
+Player: 1, deckCount: 160, handCount: 3
+Test 1: Current player should receive 2 cards
+	Hand count = 4, expected = 5, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards(numerical version): 4, 7
+	The one or both of the added cards were not treasures
+FAIL
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 160, 157
+	# of discarded cards: 2, expected: 1
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 1, expected 1
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 2
+Player: 1, deckCount: 470, handCount: 5
+Test 1: Current player should receive 2 cards
+	Hand count = 6, expected = 7, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards(numerical version): 6, 0
+	The one or both of the added cards were not treasures
+FAIL
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 470, 469
+	# of discarded cards: 0, expected: -1
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 1, expected 1
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 3
+Player: 0, deckCount: 390, handCount: 4
+Test 1: Current player should receive 2 cards
+	Hand count = 5, expected = 6, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards: silver, copper
+	The added cards were treasures
+PASS
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 390, 383
+	# of discarded cards: 6, expected: 5
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 0, expected 0
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 2
+Player: 1, deckCount: 50, handCount: 5
+Test 1: Current player should receive 2 cards
+	Hand count = 6, expected = 7, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards(numerical version): 4, 0
+	The one or both of the added cards were not treasures
+FAIL
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 50, 40
+	# of discarded cards: 9, expected: 8
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 1, expected 1
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 2
+Player: 0, deckCount: 459, handCount: 4
+Test 1: Current player should receive 2 cards
+	Hand count = 5, expected = 6, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards: gold, copper
+	The added cards were treasures
+PASS
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 459, 457
+	# of discarded cards: 1, expected: 0
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 0, expected 0
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 2
+Player: 1, deckCount: 497, handCount: 2
+Test 1: Current player should receive 2 cards
+	Hand count = 3, expected = 4, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards(numerical version): 4, 7
+	The one or both of the added cards were not treasures
+FAIL
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 497, 494
+	# of discarded cards: 2, expected: 1
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 1, expected 1
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 2
+Player: 0, deckCount: 207, handCount: 1
+Test 1: Current player should receive 2 cards
+	Hand count = 2, expected = 3, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards(numerical version): 6, 1
+	The one or both of the added cards were not treasures
+FAIL
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 207, 197
+	# of discarded cards: 9, expected: 8
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 0, expected 0
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 2
+Player: 0, deckCount: 89, handCount: 4
+Test 1: Current player should receive 2 cards
+	Hand count = 5, expected = 6, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards: silver, copper
+	The added cards were treasures
+PASS
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 89, 85
+	# of discarded cards: 3, expected: 2
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 0, expected 0
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 2
+Player: 0, deckCount: 109, handCount: 2
+Test 1: Current player should receive 2 cards
+	Hand count = 3, expected = 4, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards(numerical version): 5, 1
+	The one or both of the added cards were not treasures
+FAIL
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 109, 62
+	# of discarded cards: 46, expected: 45
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 0, expected 0
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 2
+Player: 0, deckCount: 191, handCount: 3
+Test 1: Current player should receive 2 cards
+	Hand count = 4, expected = 5, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards: copper, copper
+	The added cards were treasures
+PASS
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 191, 176
+	# of discarded cards: 14, expected: 13
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 0, expected 0
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 2
+Player: 1, deckCount: 200, handCount: 1
+Test 1: Current player should receive 2 cards
+	Hand count = 2, expected = 3, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards: silver, copper
+	The added cards were treasures
+PASS
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 200, 169
+	# of discarded cards: 30, expected: 29
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 1, expected 1
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 2
+Player: 1, deckCount: 336, handCount: 5
+Test 1: Current player should receive 2 cards
+	Hand count = 6, expected = 7, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards(numerical version): 5, 0
+	The one or both of the added cards were not treasures
+FAIL
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 336, 323
+	# of discarded cards: 12, expected: 11
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 1, expected 1
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 2
+Player: 0, deckCount: 12, handCount: 2
+Test 1: Current player should receive 2 cards
+	Hand count = 3, expected = 4, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards: silver, copper
+	The added cards were treasures
+PASS
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 12, 11
+	# of discarded cards: 0, expected: -1
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 0, expected 0
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 2
+Player: 0, deckCount: 44, handCount: 5
+Test 1: Current player should receive 2 cards
+	Hand count = 6, expected = 7, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards(numerical version): 6, 0
+	The one or both of the added cards were not treasures
+FAIL
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 44, 32
+	# of discarded cards: 11, expected: 10
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 0, expected 0
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 3
+Player: 1, deckCount: 41, handCount: 5
+Test 1: Current player should receive 2 cards
+	Hand count = 6, expected = 7, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards(numerical version): 5, 0
+	The one or both of the added cards were not treasures
+FAIL
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 41, 38
+	# of discarded cards: 2, expected: 1
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 1, expected 1
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 2
+Player: 0, deckCount: 331, handCount: 3
+Test 1: Current player should receive 2 cards
+	Hand count = 4, expected = 5, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards: silver, copper
+	The added cards were treasures
+PASS
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 331, 322
+	# of discarded cards: 8, expected: 7
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 0, expected 0
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 2
+Player: 1, deckCount: 294, handCount: 1
+Test 1: Current player should receive 2 cards
+	Hand count = 2, expected = 3, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards: silver, copper
+	The added cards were treasures
+PASS
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 294, 292
+	# of discarded cards: 1, expected: 0
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 1, expected 1
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 3
+Player: 0, deckCount: 317, handCount: 2
+Test 1: Current player should receive 2 cards
+	Hand count = 3, expected = 4, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards: gold, copper
+	The added cards were treasures
+PASS
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 317, 316
+	# of discarded cards: 0, expected: -1
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 0, expected 0
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 3
+Player: 1, deckCount: 43, handCount: 5
+Test 1: Current player should receive 2 cards
+	Hand count = 6, expected = 7, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards(numerical version): 4, 0
+	The one or both of the added cards were not treasures
+FAIL
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 43, 38
+	# of discarded cards: 4, expected: 3
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 1, expected 1
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 3
+Player: 2, deckCount: 101, handCount: 2
+Test 1: Current player should receive 2 cards
+	Hand count = 3, expected = 4, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards: silver, silver
+	The added cards were treasures
+PASS
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 101, 100
+	# of discarded cards: 0, expected: -1
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 2, expected 2
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 3
+Player: 2, deckCount: 274, handCount: 5
+Test 1: Current player should receive 2 cards
+	Hand count = 6, expected = 7, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards(numerical version): 4, 0
+	The one or both of the added cards were not treasures
+FAIL
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 274, 271
+	# of discarded cards: 2, expected: 1
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 2, expected 2
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 3
+Player: 1, deckCount: 78, handCount: 4
+Test 1: Current player should receive 2 cards
+	Hand count = 5, expected = 6, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards: gold, copper
+	The added cards were treasures
+PASS
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 78, 77
+	# of discarded cards: 0, expected: -1
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 1, expected 1
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+Test scenario:
+Num of players: 2
+Player: 0, deckCount: 307, handCount: 5
+Test 1: Current player should receive 2 cards
+	Hand count = 6, expected = 7, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: The two new cards should be treasure cards
+	Cards(numerical version): 6, 0
+	The one or both of the added cards were not treasures
+FAIL
+
+Test 3: Check that the drawn cards were moved from deck to discard
+	deckCounts: 307, 297
+	# of discarded cards: 9, expected: 8
+	Incorrect number of cards was discarded or a previous test FAIL
+FAIL
+
+Test 4: No state change should occur of the other players
+	Current player: 0, expected 0
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+****************************************************************
+File 'dominion.c'
+Lines executed:22.81% of 570
+Branches executed:25.18% of 417
+Taken at least once:17.51% of 417
+Calls executed:12.37% of 97
+Creating 'dominion.c.gcov'
+

@@ -1,0 +1,2384 @@
+Results for running  random card1 tests:
+randomtestcard1.c:
+*******************************************************
+               Cutpurse Random Test                  
+*******************************************************
+Test scenario:
+Num of players: 3
+Player: 0, handCount: 1, coppers: 0, silvers: 0, golds: 0
+Player: 1, handCount: 1, coppers: 0, silvers: 0, golds: 0
+Player: 2, handCount: 3, coppers: 0, silvers: 0, golds: 1
+
+Test 1: Current player, player 0, should receive 2 additional coins
+	Coin count = 2, expected = 2
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 2
+Player: 0, handCount: 2, coppers: 0, silvers: 0, golds: 1
+Player: 1, handCount: 3, coppers: 0, silvers: 0, golds: 0
+
+Test 1: Current player, player 1, should receive 2 additional coins
+	Coin count = 2, expected = 2
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 3
+Player: 0, handCount: 3, coppers: 0, silvers: 0, golds: 0
+Player: 1, handCount: 5, coppers: 0, silvers: 1, golds: 0
+Player: 2, handCount: 4, coppers: 1, silvers: 0, golds: 0
+
+Test 1: Current player, player 2, should receive 2 additional coins
+	Coin count = 2, expected = 3
+	Incorrect number of coins
+FAIL
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 3
+Player: 0, handCount: 3, coppers: 0, silvers: 0, golds: 0
+Player: 1, handCount: 1, coppers: 0, silvers: 0, golds: 0
+Player: 2, handCount: 2, coppers: 0, silvers: 0, golds: 0
+
+Test 1: Current player, player 2, should receive 2 additional coins
+	Coin count = 2, expected = 2
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 3
+Player: 0, handCount: 2, coppers: 0, silvers: 0, golds: 1
+Player: 1, handCount: 1, coppers: 0, silvers: 0, golds: 0
+Player: 2, handCount: 3, coppers: 0, silvers: 0, golds: 0
+
+Test 1: Current player, player 2, should receive 2 additional coins
+	Coin count = 2, expected = 2
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 3
+Player: 0, handCount: 1, coppers: 0, silvers: 0, golds: 0
+Player: 1, handCount: 1, coppers: 0, silvers: 0, golds: 0
+Player: 2, handCount: 3, coppers: 0, silvers: 0, golds: 1
+
+Test 1: Current player, player 0, should receive 2 additional coins
+	Coin count = 2, expected = 2
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 3
+Player: 0, handCount: 4, coppers: 0, silvers: 0, golds: 1
+Player: 1, handCount: 5, coppers: 0, silvers: 0, golds: 0
+Player: 2, handCount: 5, coppers: 0, silvers: 0, golds: 0
+
+Test 1: Current player, player 0, should receive 2 additional coins
+	Coin count = 5, expected = 5
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 2
+Player: 0, handCount: 3, coppers: 0, silvers: 0, golds: 0
+Player: 1, handCount: 3, coppers: 0, silvers: 0, golds: 0
+
+Test 1: Current player, player 0, should receive 2 additional coins
+	Coin count = 2, expected = 2
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 2
+Player: 0, handCount: 1, coppers: 0, silvers: 0, golds: 0
+Player: 1, handCount: 5, coppers: 1, silvers: 0, golds: 0
+
+Test 1: Current player, player 1, should receive 2 additional coins
+	Coin count = 3, expected = 3
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 3
+Player: 0, handCount: 5, coppers: 0, silvers: 0, golds: 0
+Player: 1, handCount: 2, coppers: 1, silvers: 1, golds: 0
+Player: 2, handCount: 4, coppers: 0, silvers: 1, golds: 0
+
+Test 1: Current player, player 2, should receive 2 additional coins
+	Coin count = 2, expected = 4
+	Incorrect number of coins
+FAIL
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+	Coppers before: 1, coppers after: 0
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+Player 2's amount of silvers was changed incorrectly
+FAIL
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 3
+Player: 0, handCount: 1, coppers: 0, silvers: 0, golds: 0
+Player: 1, handCount: 4, coppers: 0, silvers: 0, golds: 0
+Player: 2, handCount: 4, coppers: 0, silvers: 0, golds: 1
+
+Test 1: Current player, player 2, should receive 2 additional coins
+	Coin count = 5, expected = 5
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 3
+Player: 0, handCount: 5, coppers: 0, silvers: 0, golds: 0
+Player: 1, handCount: 5, coppers: 0, silvers: 0, golds: 1
+Player: 2, handCount: 4, coppers: 1, silvers: 0, golds: 0
+
+Test 1: Current player, player 1, should receive 2 additional coins
+	Coin count = 2, expected = 5
+	Incorrect number of coins
+FAIL
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+	Coppers before: 1, coppers after: 0
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 2
+Player: 0, handCount: 4, coppers: 0, silvers: 0, golds: 0
+Player: 1, handCount: 4, coppers: 0, silvers: 0, golds: 0
+
+Test 1: Current player, player 1, should receive 2 additional coins
+	Coin count = 2, expected = 2
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 2
+Player: 0, handCount: 2, coppers: 0, silvers: 0, golds: 1
+Player: 1, handCount: 2, coppers: 0, silvers: 0, golds: 0
+
+Test 1: Current player, player 1, should receive 2 additional coins
+	Coin count = 2, expected = 2
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 3
+Player: 0, handCount: 1, coppers: 0, silvers: 0, golds: 0
+Player: 1, handCount: 4, coppers: 0, silvers: 0, golds: 1
+Player: 2, handCount: 3, coppers: 0, silvers: 0, golds: 0
+
+Test 1: Current player, player 2, should receive 2 additional coins
+	Coin count = 2, expected = 2
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 3
+Player: 0, handCount: 3, coppers: 0, silvers: 0, golds: 1
+Player: 1, handCount: 1, coppers: 0, silvers: 0, golds: 0
+Player: 2, handCount: 5, coppers: 0, silvers: 0, golds: 1
+
+Test 1: Current player, player 2, should receive 2 additional coins
+	Coin count = 5, expected = 5
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 3
+Player: 0, handCount: 4, coppers: 0, silvers: 0, golds: 0
+Player: 1, handCount: 4, coppers: 1, silvers: 0, golds: 0
+Player: 2, handCount: 2, coppers: 0, silvers: 0, golds: 0
+
+Test 1: Current player, player 1, should receive 2 additional coins
+	Coin count = 3, expected = 3
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 3
+Player: 0, handCount: 1, coppers: 0, silvers: 0, golds: 0
+Player: 1, handCount: 2, coppers: 0, silvers: 0, golds: 0
+Player: 2, handCount: 3, coppers: 0, silvers: 0, golds: 0
+
+Test 1: Current player, player 1, should receive 2 additional coins
+	Coin count = 2, expected = 2
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 2
+Player: 0, handCount: 3, coppers: 0, silvers: 0, golds: 0
+Player: 1, handCount: 3, coppers: 0, silvers: 1, golds: 0
+
+Test 1: Current player, player 1, should receive 2 additional coins
+	Coin count = 4, expected = 4
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 3
+Player: 0, handCount: 2, coppers: 0, silvers: 0, golds: 0
+Player: 1, handCount: 5, coppers: 0, silvers: 0, golds: 0
+Player: 2, handCount: 2, coppers: 0, silvers: 0, golds: 0
+
+Test 1: Current player, player 2, should receive 2 additional coins
+	Coin count = 2, expected = 2
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 2
+Player: 0, handCount: 2, coppers: 0, silvers: 0, golds: 0
+Player: 1, handCount: 1, coppers: 0, silvers: 0, golds: 0
+
+Test 1: Current player, player 1, should receive 2 additional coins
+	Coin count = 2, expected = 2
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 2
+Player: 0, handCount: 3, coppers: 1, silvers: 0, golds: 0
+Player: 1, handCount: 4, coppers: 1, silvers: 0, golds: 0
+
+Test 1: Current player, player 0, should receive 2 additional coins
+	Coin count = 3, expected = 3
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+	Coppers before: 1, coppers after: 0
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 3
+Player: 0, handCount: 3, coppers: 0, silvers: 1, golds: 0
+Player: 1, handCount: 4, coppers: 0, silvers: 0, golds: 0
+Player: 2, handCount: 5, coppers: 0, silvers: 0, golds: 0
+
+Test 1: Current player, player 2, should receive 2 additional coins
+	Coin count = 2, expected = 2
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 3
+Player: 0, handCount: 1, coppers: 0, silvers: 0, golds: 0
+Player: 1, handCount: 4, coppers: 0, silvers: 0, golds: 0
+Player: 2, handCount: 2, coppers: 0, silvers: 0, golds: 0
+
+Test 1: Current player, player 2, should receive 2 additional coins
+	Coin count = 2, expected = 2
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 2
+Player: 0, handCount: 1, coppers: 0, silvers: 0, golds: 0
+Player: 1, handCount: 1, coppers: 0, silvers: 0, golds: 0
+
+Test 1: Current player, player 0, should receive 2 additional coins
+	Coin count = 2, expected = 2
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 2
+Player: 0, handCount: 4, coppers: 0, silvers: 0, golds: 0
+Player: 1, handCount: 5, coppers: 0, silvers: 0, golds: 0
+
+Test 1: Current player, player 0, should receive 2 additional coins
+	Coin count = 2, expected = 2
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 2
+Player: 0, handCount: 4, coppers: 0, silvers: 0, golds: 0
+Player: 1, handCount: 3, coppers: 0, silvers: 0, golds: 0
+
+Test 1: Current player, player 1, should receive 2 additional coins
+	Coin count = 2, expected = 2
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 3
+Player: 0, handCount: 4, coppers: 1, silvers: 0, golds: 1
+Player: 1, handCount: 5, coppers: 0, silvers: 0, golds: 0
+Player: 2, handCount: 3, coppers: 0, silvers: 0, golds: 1
+
+Test 1: Current player, player 2, should receive 2 additional coins
+	Coin count = 2, expected = 5
+	Incorrect number of coins
+FAIL
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+	Coppers before: 1, coppers after: 0
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	Player 2's amount of golds was changed incorrectly
+FAIL
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 2
+Player: 0, handCount: 2, coppers: 0, silvers: 0, golds: 0
+Player: 1, handCount: 4, coppers: 0, silvers: 0, golds: 0
+
+Test 1: Current player, player 0, should receive 2 additional coins
+	Coin count = 2, expected = 2
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 2
+Player: 0, handCount: 4, coppers: 0, silvers: 0, golds: 0
+Player: 1, handCount: 3, coppers: 0, silvers: 0, golds: 0
+
+Test 1: Current player, player 0, should receive 2 additional coins
+	Coin count = 2, expected = 2
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 3
+Player: 0, handCount: 3, coppers: 0, silvers: 0, golds: 0
+Player: 1, handCount: 2, coppers: 0, silvers: 0, golds: 0
+Player: 2, handCount: 3, coppers: 0, silvers: 0, golds: 0
+
+Test 1: Current player, player 2, should receive 2 additional coins
+	Coin count = 2, expected = 2
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 3
+Player: 0, handCount: 4, coppers: 0, silvers: 0, golds: 0
+Player: 1, handCount: 3, coppers: 0, silvers: 0, golds: 0
+Player: 2, handCount: 4, coppers: 0, silvers: 0, golds: 0
+
+Test 1: Current player, player 2, should receive 2 additional coins
+	Coin count = 2, expected = 2
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 3
+Player: 0, handCount: 5, coppers: 0, silvers: 1, golds: 0
+Player: 1, handCount: 1, coppers: 0, silvers: 0, golds: 0
+Player: 2, handCount: 5, coppers: 0, silvers: 0, golds: 0
+
+Test 1: Current player, player 0, should receive 2 additional coins
+	Coin count = 4, expected = 4
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 3
+Player: 0, handCount: 4, coppers: 0, silvers: 2, golds: 0
+Player: 1, handCount: 4, coppers: 0, silvers: 0, golds: 0
+Player: 2, handCount: 5, coppers: 0, silvers: 0, golds: 0
+
+Test 1: Current player, player 1, should receive 2 additional coins
+	Coin count = 2, expected = 2
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 2
+Player: 0, handCount: 1, coppers: 0, silvers: 0, golds: 0
+Player: 1, handCount: 4, coppers: 0, silvers: 1, golds: 1
+
+Test 1: Current player, player 0, should receive 2 additional coins
+	Coin count = 2, expected = 2
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 2
+Player: 0, handCount: 5, coppers: 0, silvers: 0, golds: 0
+Player: 1, handCount: 4, coppers: 1, silvers: 0, golds: 0
+
+Test 1: Current player, player 1, should receive 2 additional coins
+	Coin count = 3, expected = 3
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 2
+Player: 0, handCount: 2, coppers: 0, silvers: 0, golds: 0
+Player: 1, handCount: 5, coppers: 0, silvers: 0, golds: 0
+
+Test 1: Current player, player 0, should receive 2 additional coins
+	Coin count = 2, expected = 2
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 3
+Player: 0, handCount: 3, coppers: 0, silvers: 0, golds: 1
+Player: 1, handCount: 1, coppers: 0, silvers: 0, golds: 0
+Player: 2, handCount: 1, coppers: 0, silvers: 0, golds: 0
+
+Test 1: Current player, player 1, should receive 2 additional coins
+	Coin count = 2, expected = 2
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 2
+Player: 0, handCount: 5, coppers: 0, silvers: 0, golds: 1
+Player: 1, handCount: 4, coppers: 0, silvers: 0, golds: 0
+
+Test 1: Current player, player 1, should receive 2 additional coins
+	Coin count = 2, expected = 2
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 3
+Player: 0, handCount: 5, coppers: 0, silvers: 0, golds: 1
+Player: 1, handCount: 1, coppers: 0, silvers: 0, golds: 0
+Player: 2, handCount: 4, coppers: 0, silvers: 1, golds: 0
+
+Test 1: Current player, player 1, should receive 2 additional coins
+	Coin count = 2, expected = 2
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 3
+Player: 0, handCount: 5, coppers: 0, silvers: 1, golds: 0
+Player: 1, handCount: 4, coppers: 0, silvers: 0, golds: 0
+Player: 2, handCount: 3, coppers: 0, silvers: 0, golds: 0
+
+Test 1: Current player, player 0, should receive 2 additional coins
+	Coin count = 4, expected = 4
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 3
+Player: 0, handCount: 5, coppers: 0, silvers: 0, golds: 0
+Player: 1, handCount: 2, coppers: 0, silvers: 0, golds: 0
+Player: 2, handCount: 1, coppers: 0, silvers: 0, golds: 0
+
+Test 1: Current player, player 1, should receive 2 additional coins
+	Coin count = 2, expected = 2
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 3
+Player: 0, handCount: 3, coppers: 0, silvers: 0, golds: 0
+Player: 1, handCount: 2, coppers: 0, silvers: 0, golds: 0
+Player: 2, handCount: 3, coppers: 0, silvers: 0, golds: 0
+
+Test 1: Current player, player 2, should receive 2 additional coins
+	Coin count = 2, expected = 2
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 3
+Player: 0, handCount: 2, coppers: 0, silvers: 0, golds: 0
+Player: 1, handCount: 5, coppers: 0, silvers: 0, golds: 0
+Player: 2, handCount: 2, coppers: 0, silvers: 0, golds: 0
+
+Test 1: Current player, player 1, should receive 2 additional coins
+	Coin count = 2, expected = 2
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 3
+Player: 0, handCount: 2, coppers: 0, silvers: 0, golds: 0
+Player: 1, handCount: 4, coppers: 0, silvers: 0, golds: 0
+Player: 2, handCount: 5, coppers: 0, silvers: 0, golds: 0
+
+Test 1: Current player, player 1, should receive 2 additional coins
+	Coin count = 2, expected = 2
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 3
+Player: 0, handCount: 5, coppers: 0, silvers: 1, golds: 1
+Player: 1, handCount: 1, coppers: 0, silvers: 0, golds: 0
+Player: 2, handCount: 5, coppers: 0, silvers: 0, golds: 0
+
+Test 1: Current player, player 0, should receive 2 additional coins
+	Coin count = 7, expected = 7
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 2
+Player: 0, handCount: 4, coppers: 0, silvers: 0, golds: 0
+Player: 1, handCount: 4, coppers: 0, silvers: 0, golds: 0
+
+Test 1: Current player, player 0, should receive 2 additional coins
+	Coin count = 2, expected = 2
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 3
+Player: 0, handCount: 4, coppers: 0, silvers: 0, golds: 0
+Player: 1, handCount: 3, coppers: 0, silvers: 0, golds: 0
+Player: 2, handCount: 2, coppers: 0, silvers: 0, golds: 0
+
+Test 1: Current player, player 2, should receive 2 additional coins
+	Coin count = 2, expected = 2
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 2
+Player: 0, handCount: 1, coppers: 0, silvers: 0, golds: 0
+Player: 1, handCount: 3, coppers: 0, silvers: 0, golds: 0
+
+Test 1: Current player, player 1, should receive 2 additional coins
+	Coin count = 2, expected = 2
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 2
+Player: 0, handCount: 2, coppers: 0, silvers: 0, golds: 0
+Player: 1, handCount: 1, coppers: 0, silvers: 0, golds: 0
+
+Test 1: Current player, player 0, should receive 2 additional coins
+	Coin count = 2, expected = 2
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 2
+Player: 0, handCount: 1, coppers: 0, silvers: 0, golds: 0
+Player: 1, handCount: 4, coppers: 0, silvers: 0, golds: 0
+
+Test 1: Current player, player 1, should receive 2 additional coins
+	Coin count = 2, expected = 2
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 2
+Player: 0, handCount: 4, coppers: 0, silvers: 0, golds: 0
+Player: 1, handCount: 1, coppers: 0, silvers: 0, golds: 0
+
+Test 1: Current player, player 0, should receive 2 additional coins
+	Coin count = 2, expected = 2
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 2
+Player: 0, handCount: 3, coppers: 0, silvers: 0, golds: 0
+Player: 1, handCount: 2, coppers: 0, silvers: 0, golds: 0
+
+Test 1: Current player, player 1, should receive 2 additional coins
+	Coin count = 2, expected = 2
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 3
+Player: 0, handCount: 4, coppers: 0, silvers: 1, golds: 0
+Player: 1, handCount: 3, coppers: 0, silvers: 0, golds: 1
+Player: 2, handCount: 5, coppers: 1, silvers: 0, golds: 0
+
+Test 1: Current player, player 1, should receive 2 additional coins
+	Coin count = 2, expected = 5
+	Incorrect number of coins
+FAIL
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+	Coppers before: 1, coppers after: 0
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 2
+Player: 0, handCount: 4, coppers: 0, silvers: 0, golds: 0
+Player: 1, handCount: 5, coppers: 0, silvers: 1, golds: 0
+
+Test 1: Current player, player 0, should receive 2 additional coins
+	Coin count = 2, expected = 2
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 2
+Player: 0, handCount: 5, coppers: 0, silvers: 0, golds: 0
+Player: 1, handCount: 2, coppers: 0, silvers: 0, golds: 0
+
+Test 1: Current player, player 0, should receive 2 additional coins
+	Coin count = 2, expected = 2
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 3
+Player: 0, handCount: 4, coppers: 0, silvers: 0, golds: 0
+Player: 1, handCount: 3, coppers: 0, silvers: 0, golds: 1
+Player: 2, handCount: 5, coppers: 0, silvers: 0, golds: 1
+
+Test 1: Current player, player 1, should receive 2 additional coins
+	Coin count = 5, expected = 5
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 3
+Player: 0, handCount: 2, coppers: 0, silvers: 0, golds: 0
+Player: 1, handCount: 5, coppers: 1, silvers: 1, golds: 0
+Player: 2, handCount: 4, coppers: 0, silvers: 0, golds: 0
+
+Test 1: Current player, player 2, should receive 2 additional coins
+	Coin count = 2, expected = 2
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+	Coppers before: 1, coppers after: 0
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 3
+Player: 0, handCount: 3, coppers: 0, silvers: 0, golds: 0
+Player: 1, handCount: 2, coppers: 0, silvers: 0, golds: 0
+Player: 2, handCount: 5, coppers: 0, silvers: 0, golds: 0
+
+Test 1: Current player, player 1, should receive 2 additional coins
+	Coin count = 2, expected = 2
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 2
+Player: 0, handCount: 4, coppers: 0, silvers: 0, golds: 0
+Player: 1, handCount: 3, coppers: 1, silvers: 0, golds: 0
+
+Test 1: Current player, player 1, should receive 2 additional coins
+	Coin count = 2, expected = 3
+	Incorrect number of coins
+FAIL
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 2
+Player: 0, handCount: 3, coppers: 0, silvers: 0, golds: 0
+Player: 1, handCount: 2, coppers: 0, silvers: 0, golds: 0
+
+Test 1: Current player, player 1, should receive 2 additional coins
+	Coin count = 2, expected = 2
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 3
+Player: 0, handCount: 3, coppers: 1, silvers: 0, golds: 0
+Player: 1, handCount: 3, coppers: 1, silvers: 0, golds: 1
+Player: 2, handCount: 3, coppers: 0, silvers: 0, golds: 0
+
+Test 1: Current player, player 0, should receive 2 additional coins
+	Coin count = 2, expected = 3
+	Incorrect number of coins
+FAIL
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+	Coppers before: 1, coppers after: 0
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 2
+Player: 0, handCount: 2, coppers: 0, silvers: 0, golds: 0
+Player: 1, handCount: 1, coppers: 0, silvers: 0, golds: 0
+
+Test 1: Current player, player 1, should receive 2 additional coins
+	Coin count = 2, expected = 2
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 2
+Player: 0, handCount: 3, coppers: 0, silvers: 0, golds: 0
+Player: 1, handCount: 1, coppers: 0, silvers: 0, golds: 0
+
+Test 1: Current player, player 0, should receive 2 additional coins
+	Coin count = 2, expected = 2
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 2
+Player: 0, handCount: 3, coppers: 0, silvers: 0, golds: 0
+Player: 1, handCount: 1, coppers: 0, silvers: 0, golds: 0
+
+Test 1: Current player, player 1, should receive 2 additional coins
+	Coin count = 2, expected = 2
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 3
+Player: 0, handCount: 3, coppers: 0, silvers: 0, golds: 1
+Player: 1, handCount: 4, coppers: 0, silvers: 0, golds: 0
+Player: 2, handCount: 2, coppers: 0, silvers: 0, golds: 0
+
+Test 1: Current player, player 1, should receive 2 additional coins
+	Coin count = 2, expected = 2
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 3
+Player: 0, handCount: 5, coppers: 0, silvers: 0, golds: 0
+Player: 1, handCount: 1, coppers: 0, silvers: 0, golds: 0
+Player: 2, handCount: 5, coppers: 0, silvers: 0, golds: 0
+
+Test 1: Current player, player 0, should receive 2 additional coins
+	Coin count = 2, expected = 2
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 2
+Player: 0, handCount: 2, coppers: 0, silvers: 0, golds: 0
+Player: 1, handCount: 4, coppers: 0, silvers: 0, golds: 0
+
+Test 1: Current player, player 1, should receive 2 additional coins
+	Coin count = 2, expected = 2
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 2
+Player: 0, handCount: 4, coppers: 0, silvers: 0, golds: 0
+Player: 1, handCount: 3, coppers: 0, silvers: 0, golds: 0
+
+Test 1: Current player, player 0, should receive 2 additional coins
+	Coin count = 2, expected = 2
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 3
+Player: 0, handCount: 3, coppers: 0, silvers: 0, golds: 0
+Player: 1, handCount: 5, coppers: 1, silvers: 0, golds: 0
+Player: 2, handCount: 3, coppers: 0, silvers: 0, golds: 0
+
+Test 1: Current player, player 1, should receive 2 additional coins
+	Coin count = 3, expected = 3
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 3
+Player: 0, handCount: 1, coppers: 0, silvers: 0, golds: 0
+Player: 1, handCount: 3, coppers: 0, silvers: 0, golds: 2
+Player: 2, handCount: 4, coppers: 0, silvers: 0, golds: 0
+
+Test 1: Current player, player 0, should receive 2 additional coins
+	Coin count = 2, expected = 2
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 3
+Player: 0, handCount: 3, coppers: 0, silvers: 0, golds: 0
+Player: 1, handCount: 2, coppers: 0, silvers: 0, golds: 0
+Player: 2, handCount: 2, coppers: 0, silvers: 0, golds: 0
+
+Test 1: Current player, player 2, should receive 2 additional coins
+	Coin count = 2, expected = 2
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 2
+Player: 0, handCount: 5, coppers: 1, silvers: 1, golds: 0
+Player: 1, handCount: 1, coppers: 0, silvers: 0, golds: 0
+
+Test 1: Current player, player 1, should receive 2 additional coins
+	Coin count = 2, expected = 2
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+	Coppers before: 1, coppers after: 0
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 3
+Player: 0, handCount: 3, coppers: 0, silvers: 0, golds: 0
+Player: 1, handCount: 5, coppers: 0, silvers: 1, golds: 0
+Player: 2, handCount: 1, coppers: 0, silvers: 0, golds: 0
+
+Test 1: Current player, player 0, should receive 2 additional coins
+	Coin count = 2, expected = 2
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 2
+Player: 0, handCount: 1, coppers: 0, silvers: 0, golds: 0
+Player: 1, handCount: 2, coppers: 0, silvers: 0, golds: 0
+
+Test 1: Current player, player 0, should receive 2 additional coins
+	Coin count = 2, expected = 2
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 3
+Player: 0, handCount: 2, coppers: 0, silvers: 0, golds: 0
+Player: 1, handCount: 5, coppers: 0, silvers: 0, golds: 0
+Player: 2, handCount: 4, coppers: 0, silvers: 0, golds: 0
+
+Test 1: Current player, player 0, should receive 2 additional coins
+	Coin count = 2, expected = 2
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 3
+Player: 0, handCount: 4, coppers: 1, silvers: 0, golds: 0
+Player: 1, handCount: 4, coppers: 1, silvers: 0, golds: 0
+Player: 2, handCount: 1, coppers: 0, silvers: 0, golds: 0
+
+Test 1: Current player, player 2, should receive 2 additional coins
+	Coin count = 2, expected = 2
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+	Coppers before: 1, coppers after: 0
+	Coppers before: 1, coppers after: 0
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 3
+Player: 0, handCount: 1, coppers: 0, silvers: 0, golds: 0
+Player: 1, handCount: 5, coppers: 0, silvers: 0, golds: 0
+Player: 2, handCount: 5, coppers: 1, silvers: 0, golds: 0
+
+Test 1: Current player, player 1, should receive 2 additional coins
+	Coin count = 2, expected = 2
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+	Coppers before: 1, coppers after: 0
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 3
+Player: 0, handCount: 4, coppers: 0, silvers: 0, golds: 1
+Player: 1, handCount: 2, coppers: 0, silvers: 0, golds: 0
+Player: 2, handCount: 3, coppers: 0, silvers: 0, golds: 0
+
+Test 1: Current player, player 0, should receive 2 additional coins
+	Coin count = 5, expected = 5
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 3
+Player: 0, handCount: 3, coppers: 0, silvers: 1, golds: 0
+Player: 1, handCount: 3, coppers: 0, silvers: 0, golds: 0
+Player: 2, handCount: 3, coppers: 0, silvers: 0, golds: 0
+
+Test 1: Current player, player 2, should receive 2 additional coins
+	Coin count = 2, expected = 2
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 2
+Player: 0, handCount: 4, coppers: 0, silvers: 2, golds: 0
+Player: 1, handCount: 1, coppers: 0, silvers: 0, golds: 0
+
+Test 1: Current player, player 1, should receive 2 additional coins
+	Coin count = 2, expected = 2
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 2
+Player: 0, handCount: 4, coppers: 1, silvers: 0, golds: 0
+Player: 1, handCount: 1, coppers: 0, silvers: 0, golds: 0
+
+Test 1: Current player, player 1, should receive 2 additional coins
+	Coin count = 2, expected = 2
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+	Coppers before: 1, coppers after: 0
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 2
+Player: 0, handCount: 4, coppers: 0, silvers: 0, golds: 0
+Player: 1, handCount: 4, coppers: 0, silvers: 0, golds: 1
+
+Test 1: Current player, player 0, should receive 2 additional coins
+	Coin count = 2, expected = 2
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 3
+Player: 0, handCount: 2, coppers: 0, silvers: 0, golds: 0
+Player: 1, handCount: 2, coppers: 0, silvers: 0, golds: 0
+Player: 2, handCount: 2, coppers: 0, silvers: 0, golds: 1
+
+Test 1: Current player, player 2, should receive 2 additional coins
+	Coin count = 5, expected = 5
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 3
+Player: 0, handCount: 5, coppers: 0, silvers: 0, golds: 0
+Player: 1, handCount: 4, coppers: 0, silvers: 0, golds: 0
+Player: 2, handCount: 5, coppers: 0, silvers: 0, golds: 0
+
+Test 1: Current player, player 0, should receive 2 additional coins
+	Coin count = 2, expected = 2
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 2
+Player: 0, handCount: 1, coppers: 0, silvers: 1, golds: 0
+Player: 1, handCount: 1, coppers: 0, silvers: 0, golds: 0
+
+Test 1: Current player, player 0, should receive 2 additional coins
+	Coin count = 2, expected = 4
+	Incorrect number of coins
+FAIL
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 3
+Player: 0, handCount: 3, coppers: 0, silvers: 0, golds: 0
+Player: 1, handCount: 4, coppers: 0, silvers: 0, golds: 0
+Player: 2, handCount: 5, coppers: 0, silvers: 0, golds: 0
+
+Test 1: Current player, player 0, should receive 2 additional coins
+	Coin count = 2, expected = 2
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 3
+Player: 0, handCount: 4, coppers: 0, silvers: 0, golds: 0
+Player: 1, handCount: 1, coppers: 0, silvers: 0, golds: 0
+Player: 2, handCount: 4, coppers: 0, silvers: 0, golds: 0
+
+Test 1: Current player, player 1, should receive 2 additional coins
+	Coin count = 2, expected = 2
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 2
+Player: 0, handCount: 1, coppers: 0, silvers: 0, golds: 0
+Player: 1, handCount: 5, coppers: 0, silvers: 0, golds: 0
+
+Test 1: Current player, player 0, should receive 2 additional coins
+	Coin count = 2, expected = 2
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 3
+Player: 0, handCount: 4, coppers: 0, silvers: 0, golds: 0
+Player: 1, handCount: 3, coppers: 0, silvers: 0, golds: 0
+Player: 2, handCount: 3, coppers: 0, silvers: 0, golds: 0
+
+Test 1: Current player, player 1, should receive 2 additional coins
+	Coin count = 2, expected = 2
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 3
+Player: 0, handCount: 5, coppers: 0, silvers: 1, golds: 0
+Player: 1, handCount: 5, coppers: 0, silvers: 0, golds: 0
+Player: 2, handCount: 5, coppers: 0, silvers: 0, golds: 0
+
+Test 1: Current player, player 2, should receive 2 additional coins
+	Coin count = 2, expected = 2
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 3
+Player: 0, handCount: 1, coppers: 0, silvers: 1, golds: 0
+Player: 1, handCount: 4, coppers: 0, silvers: 0, golds: 0
+Player: 2, handCount: 2, coppers: 0, silvers: 0, golds: 0
+
+Test 1: Current player, player 2, should receive 2 additional coins
+	Coin count = 2, expected = 2
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 3
+Player: 0, handCount: 2, coppers: 1, silvers: 0, golds: 0
+Player: 1, handCount: 4, coppers: 0, silvers: 0, golds: 0
+Player: 2, handCount: 2, coppers: 0, silvers: 0, golds: 0
+
+Test 1: Current player, player 2, should receive 2 additional coins
+	Coin count = 2, expected = 2
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+	Coppers before: 1, coppers after: 0
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 2
+Player: 0, handCount: 4, coppers: 0, silvers: 1, golds: 1
+Player: 1, handCount: 4, coppers: 0, silvers: 0, golds: 0
+
+Test 1: Current player, player 1, should receive 2 additional coins
+	Coin count = 2, expected = 2
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 3
+Player: 0, handCount: 5, coppers: 0, silvers: 0, golds: 0
+Player: 1, handCount: 5, coppers: 0, silvers: 0, golds: 0
+Player: 2, handCount: 1, coppers: 0, silvers: 0, golds: 0
+
+Test 1: Current player, player 2, should receive 2 additional coins
+	Coin count = 2, expected = 2
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 2
+Player: 0, handCount: 4, coppers: 0, silvers: 0, golds: 0
+Player: 1, handCount: 3, coppers: 0, silvers: 1, golds: 0
+
+Test 1: Current player, player 0, should receive 2 additional coins
+	Coin count = 2, expected = 2
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 3
+Player: 0, handCount: 3, coppers: 0, silvers: 0, golds: 0
+Player: 1, handCount: 5, coppers: 0, silvers: 0, golds: 0
+Player: 2, handCount: 3, coppers: 0, silvers: 0, golds: 0
+
+Test 1: Current player, player 2, should receive 2 additional coins
+	Coin count = 2, expected = 2
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 2
+Player: 0, handCount: 1, coppers: 0, silvers: 0, golds: 0
+Player: 1, handCount: 1, coppers: 0, silvers: 0, golds: 0
+
+Test 1: Current player, player 1, should receive 2 additional coins
+	Coin count = 2, expected = 2
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 3
+Player: 0, handCount: 1, coppers: 0, silvers: 0, golds: 0
+Player: 1, handCount: 1, coppers: 0, silvers: 0, golds: 0
+Player: 2, handCount: 2, coppers: 0, silvers: 0, golds: 1
+
+Test 1: Current player, player 0, should receive 2 additional coins
+	Coin count = 2, expected = 2
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 3
+Player: 0, handCount: 5, coppers: 0, silvers: 0, golds: 0
+Player: 1, handCount: 5, coppers: 0, silvers: 1, golds: 0
+Player: 2, handCount: 5, coppers: 1, silvers: 0, golds: 0
+
+Test 1: Current player, player 1, should receive 2 additional coins
+	Coin count = 4, expected = 4
+	Correct number of coins
+PASS
+
+Test 2: Each other player should discard a copper if they have one
+	If there was a copper, it was successfully removed from the other player's hand
+	Coppers before: 1, coppers after: 0
+PASS
+
+Test 3: The number of silvers and golds should stay the same for all players
+	The gold and silvers of all players stayed the same
+PASS
+
+Test 4: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+File 'dominion.c'
+Lines executed:22.28% of 570
+Branches executed:25.18% of 417
+Taken at least once:17.27% of 417
+Calls executed:11.34% of 97
+Creating 'dominion.c.gcov'
+

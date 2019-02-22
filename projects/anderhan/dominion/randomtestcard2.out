@@ -1,0 +1,111 @@
+Results for running  random card2 tests:
+randomtestcard2.c:
+*******************************************************
+               Village Random Test                     
+*******************************************************
+Test scenario:
+Num of players: 3
+Player: 0, deckCount: 415, handCount: 4
+
+Test 1: Current player should receive 1 cards
+	Hand count = 6, expected = 5, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: Current player deck should decrease by 1 card
+	Deck count = 412, expected = 414
+	The deck did not decrease by 1, the difference was: 2
+FAIL
+
+Test 3: Current player gets two more actions
+	Actions = 3, expected = 3
+	Correct number of actions
+PASS
+
+Test 4: No state change should occur of the other players
+	Current player: 0, expected 0
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 5: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 2
+Player: 1, deckCount: 249, handCount: 1
+
+Test 1: Current player should receive 1 cards
+	Hand count = 3, expected = 2, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: Current player deck should decrease by 1 card
+	Deck count = 246, expected = 248
+	The deck did not decrease by 1, the difference was: 2
+FAIL
+
+Test 3: Current player gets two more actions
+	Actions = 3, expected = 3
+	Correct number of actions
+PASS
+
+Test 4: No state change should occur of the other players
+	Current player: 1, expected 1
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 5: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+Test scenario:
+Num of players: 3
+Player: 0, deckCount: 418, handCount: 1
+
+Test 1: Current player should receive 1 cards
+	Hand count = 3, expected = 2, diff = 1
+	Hand count did not match expected
+FAIL
+
+Test 2: Current player deck should decrease by 1 card
+	Deck count = 415, expected = 417
+	The deck did not decrease by 1, the difference was: 2
+FAIL
+
+Test 3: Current player gets two more actions
+	Actions = 3, expected = 3
+	Correct number of actions
+PASS
+
+Test 4: No state change should occur of the other players
+	Current player: 0, expected 0
+	The current player is correct 
+PASS
+
+	Make sure the other player's deck was not touched
+	The other player's deck was not effected.
+PASS
+
+Test 5: The Victory and Kingdom cards should remain the same
+	The Victory and Kingdom cards were not changed.
+PASS
+
+******************************************************************************
+File 'dominion.c'
+Lines executed:21.58% of 570
+Branches executed:22.78% of 417
+Taken at least once:14.39% of 417
+Calls executed:13.40% of 97
+Creating 'dominion.c.gcov'
+
