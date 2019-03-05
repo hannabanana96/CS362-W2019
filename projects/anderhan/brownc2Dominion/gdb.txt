@@ -1,0 +1,175 @@
+The program being debugged has been started already.
+Start it from the beginning? (y or n) 
+Starting program: /nfs/stak/users/anderhan/CS362-W2019/projects/anderhan/brownc2Dominion/cardtest4 
+
+Breakpoint 1, cardEffect (card=7, choice1=0, choice2=0, choice3=0, state=0x7fffffff1270, handPos=0, 
+    bonus=0x7fffffff123c) at dominion.c:660
+660		int currentPlayer = whoseTurn(state);
+Already logging to gdb.txt.
+The program being debugged has been started already.
+Start it from the beginning? (y or n) 
+Starting program: /nfs/stak/users/anderhan/CS362-W2019/projects/anderhan/brownc2Dominion/cardtest4 
+
+Breakpoint 1, cardEffect (card=7, choice1=0, choice2=0, choice3=0, state=0x7fffffff1270, handPos=0, 
+    bonus=0x7fffffff123c) at dominion.c:660
+660		int currentPlayer = whoseTurn(state);
+whoseTurn (state=0x7fffffff1270) at dominion.c:354
+354		return state->whoseTurn;
+355	}
+cardEffect (card=7, choice1=0, choice2=0, choice3=0, state=0x7fffffff1270, handPos=0, bonus=0x7fffffff123c)
+    at dominion.c:661
+661		int nextPlayer = currentPlayer + 1;
+663		int tributeRevealedCards[2] = {-1, -1};
+668		if (nextPlayer > (state->numPlayers - 1)){
+674		switch( card ) 
+697			return adventurerEffect(state,handPos);
+adventurerEffect (state=0x7fffffff1270, handPos=0) at dominion.c:1327
+1327		int drawntreasure = 0;
+1328		int currentPlayer = whoseTurn(state);
+whoseTurn (state=0x7fffffff1270) at dominion.c:354
+354		return state->whoseTurn;
+355	}
+adventurerEffect (state=0x7fffffff1270, handPos=0) at dominion.c:1331
+1331		int z = 0;
+drawntreasure = 0
+currentPlayer = 0
+cardDrawn = 3399
+temphand = {0 <repeats 206 times>, -136427532, 32767, 0, 0, -139614600, 32767, 1, 0, 4, 0, 259122023, 0, 
+  -136425685, 32767, 0, 0, -66096, 32767, -139616020, 32767, -139613112, 32767, -65824, 32767, -65840, 32767, 39, 
+  0, 0, 0, 0, 0, -134483704, 32767, -134244776, 32767, 4195962, 0, -139604592, 32767, 4195792, 0, 0, 1, 62, 1, 0, 
+  0, -65640, 32767, -65680, 32767, 1, 0, -134483704, 32767, -134224728, 32767, -134225584, 32767, -136424945, 
+  32767, 0, 0, -134483704, 32767, 1, 0, 0, 0, 1, 0, -134225584, 32767, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -134224728, 
+  32767, -65824, 32767, -65840, 32767, 259122023, 0, 4195962, 0, -1, 0, 0, 0, -139613112, 32767, -134244776, 32767, 
+  0 <repeats 22 times>, 6336776, 0, -24212, 32767, -24216, 32767, 1, 0, -143373055, 32767, 0, 0, 4, 0, 1, 0, 
+  -65120, 32767, -24216, 32767, 2, 0, -65040, 32767, 2, 0, 1, 0, -65232, 32767, -24216, 32767, -24220, 32767, 1, 0, 
+  -143373055, 32767, 0, 0, 4, 0, 895, 0, -65120, 32767, -24220, 32767, 3, 0, 0, 0, 3, 0, 2, 0, -65232, 32767, 
+  -24220, 32767, -24224, 32767, 1, 0, -143373055, 32767, 0, 0, 4, 0, 0, 0, -65120, 32767, -24228, 32767, 5, 0...}
+z = 32767
+drawntreasure = 0
+currentPlayer = 0
+cardDrawn = 3399
+temphand = {0 <repeats 206 times>, -136427532, 32767, 0, 0, -139614600, 32767, 1, 0, 4, 0, 259122023, 0, 
+  -136425685, 32767, 0, 0, -66096, 32767, -139616020, 32767, -139613112, 32767, -65824, 32767, -65840, 32767, 39, 
+  0, 0, 0, 0, 0, -134483704, 32767, -134244776, 32767, 4195962, 0, -139604592, 32767, 4195792, 0, 0, 1, 62, 1, 0, 
+  0, -65640, 32767, -65680, 32767, 1, 0, -134483704, 32767, -134224728, 32767, -134225584, 32767, -136424945, 
+  32767, 0, 0, -134483704, 32767, 1, 0, 0, 0, 1, 0, -134225584, 32767, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -134224728, 
+  32767, -65824, 32767, -65840, 32767, 259122023, 0, 4195962, 0, -1, 0, 0, 0, -139613112, 32767, -134244776, 32767, 
+  0 <repeats 22 times>, 6336776, 0, -24212, 32767, -24216, 32767, 1, 0, -143373055, 32767, 0, 0, 4, 0, 1, 0, 
+  -65120, 32767, -24216, 32767, 2, 0, -65040, 32767, 2, 0, 1, 0, -65232, 32767, -24216, 32767, -24220, 32767, 1, 0, 
+  -143373055, 32767, 0, 0, 4, 0, 895, 0, -65120, 32767, -24220, 32767, 3, 0, 0, 0, 3, 0, 2, 0, -65232, 32767, 
+  -24220, 32767, -24224, 32767, 1, 0, -143373055, 32767, 0, 0, 4, 0, 0, 0, -65120, 32767, -24228, 32767, 5, 0...}
+z = 32767
+drawntreasure = 0
+currentPlayer = 0
+cardDrawn = 3399
+temphand = {0 <repeats 206 times>, -136427532, 32767, 0, 0, -139614600, 32767, 1, 0, 4, 0, 259122023, 0, 
+  -136425685, 32767, 0, 0, -66096, 32767, -139616020, 32767, -139613112, 32767, -65824, 32767, -65840, 32767, 39, 
+  0, 0, 0, 0, 0, -134483704, 32767, -134244776, 32767, 4195962, 0, -139604592, 32767, 4195792, 0, 0, 1, 62, 1, 0, 
+  0, -65640, 32767, -65680, 32767, 1, 0, -134483704, 32767, -134224728, 32767, -134225584, 32767, -136424945, 
+  32767, 0, 0, -134483704, 32767, 1, 0, 0, 0, 1, 0, -134225584, 32767, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -134224728, 
+  32767, -65824, 32767, -65840, 32767, 259122023, 0, 4195962, 0, -1, 0, 0, 0, -139613112, 32767, -134244776, 32767, 
+  0 <repeats 22 times>, 6336776, 0, -24212, 32767, -24216, 32767, 1, 0, -143373055, 32767, 0, 0, 4, 0, 1, 0, 
+  -65120, 32767, -24216, 32767, 2, 0, -65040, 32767, 2, 0, 1, 0, -65232, 32767, -24216, 32767, -24220, 32767, 1, 0, 
+  -143373055, 32767, 0, 0, 4, 0, 895, 0, -65120, 32767, -24220, 32767, 3, 0, 0, 0, 3, 0, 2, 0, -65232, 32767, 
+  -24220, 32767, -24224, 32767, 1, 0, -143373055, 32767, 0, 0, 4, 0, 0, 0, -65120, 32767, -24228, 32767, 5, 0...}
+z = 32767
+1333		while(drawntreasure<2){
+1334			if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+1337			drawCard(currentPlayer, state);
+drawCard (player=0, state=0x7fffffff1270) at dominion.c:535
+535		if (state->deckCount[player] <= 0){//Deck is empty
+575			int count = state->handCount[player];//Get current hand count for player
+581			deckCounter = state->deckCount[player];//Create holder for the deck count
+582			state->hand[player][count] = state->deck[player][deckCounter - 1];//Add card to the hand
+583			state->deckCount[player]--;
+584			state->handCount[player]++;//Increment hand count
+587		return 0;
+588	}
+adventurerEffect (state=0x7fffffff1270, handPos=0) at dominion.c:1338
+1338			cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+1339			if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold) {
+1333		while(drawntreasure<2){
+drawntreasure = 0
+currentPlayer = 0
+cardDrawn = 4
+temphand = {0 <repeats 206 times>, -136427532, 32767, 0, 0, -139614600, 32767, 1, 0, 4, 0, 259122023, 0, 
+  -136425685, 32767, 0, 0, -66096, 32767, -139616020, 32767, -139613112, 32767, -65824, 32767, -65840, 32767, 39, 
+  0, 0, 0, 0, 0, -134483704, 32767, -134244776, 32767, 4195962, 0, -139604592, 32767, 4195792, 0, 0, 1, 62, 1, 0, 
+  0, -65640, 32767, -65680, 32767, 1, 0, -134483704, 32767, -134224728, 32767, -134225584, 32767, -136424945, 
+  32767, 0, 0, -134483704, 32767, 1, 0, 0, 0, 1, 0, -134225584, 32767, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -134224728, 
+  32767, -65824, 32767, -65840, 32767, 259122023, 0, 4195962, 0, -1, 0, 0, 0, -139613112, 32767, -134244776, 32767, 
+  0 <repeats 22 times>, 6336776, 0, -24212, 32767, -24216, 32767, 1, 0, -143373055, 32767, 0, 0, 4, 0, 1, 0, 
+  -65120, 32767, -24216, 32767, 2, 0, -65040, 32767, 2, 0, 1, 0, -65232, 32767, -24216, 32767, -24220, 32767, 1, 0, 
+  -143373055, 32767, 0, 0, 4, 0, 895, 0, -65120, 32767, -24220, 32767, 3, 0, 0, 0, 3, 0, 2, 0, -65232, 32767, 
+  -24220, 32767, -24224, 32767, 1, 0, -143373055, 32767, 0, 0, 4, 0, 0, 0, -65120, 32767, -24228, 32767, 5, 0...}
+z = 0
+1334			if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+1337			drawCard(currentPlayer, state);
+drawCard (player=0, state=0x7fffffff1270) at dominion.c:535
+535		if (state->deckCount[player] <= 0){//Deck is empty
+575			int count = state->handCount[player];//Get current hand count for player
+581			deckCounter = state->deckCount[player];//Create holder for the deck count
+582			state->hand[player][count] = state->deck[player][deckCounter - 1];//Add card to the hand
+583			state->deckCount[player]--;
+584			state->handCount[player]++;//Increment hand count
+587		return 0;
+588	}
+adventurerEffect (state=0x7fffffff1270, handPos=0) at dominion.c:1338
+1338			cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+1339			if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold) {
+1333		while(drawntreasure<2){
+drawntreasure = 0
+currentPlayer = 0
+cardDrawn = 4
+temphand = {0 <repeats 206 times>, -136427532, 32767, 0, 0, -139614600, 32767, 1, 0, 4, 0, 259122023, 0, 
+  -136425685, 32767, 0, 0, -66096, 32767, -139616020, 32767, -139613112, 32767, -65824, 32767, -65840, 32767, 39, 
+  0, 0, 0, 0, 0, -134483704, 32767, -134244776, 32767, 4195962, 0, -139604592, 32767, 4195792, 0, 0, 1, 62, 1, 0, 
+  0, -65640, 32767, -65680, 32767, 1, 0, -134483704, 32767, -134224728, 32767, -134225584, 32767, -136424945, 
+  32767, 0, 0, -134483704, 32767, 1, 0, 0, 0, 1, 0, -134225584, 32767, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -134224728, 
+  32767, -65824, 32767, -65840, 32767, 259122023, 0, 4195962, 0, -1, 0, 0, 0, -139613112, 32767, -134244776, 32767, 
+  0 <repeats 22 times>, 6336776, 0, -24212, 32767, -24216, 32767, 1, 0, -143373055, 32767, 0, 0, 4, 0, 1, 0, 
+  -65120, 32767, -24216, 32767, 2, 0, -65040, 32767, 2, 0, 1, 0, -65232, 32767, -24216, 32767, -24220, 32767, 1, 0, 
+  -143373055, 32767, 0, 0, 4, 0, 895, 0, -65120, 32767, -24220, 32767, 3, 0, 0, 0, 3, 0, 2, 0, -65232, 32767, 
+  -24220, 32767, -24224, 32767, 1, 0, -143373055, 32767, 0, 0, 4, 0, 0, 0, -65120, 32767, -24228, 32767, 5, 0...}
+z = 0
+1334			if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+1337			drawCard(currentPlayer, state);
+drawCard (player=0, state=0x7fffffff1270) at dominion.c:535
+535		if (state->deckCount[player] <= 0){//Deck is empty
+575			int count = state->handCount[player];//Get current hand count for player
+581			deckCounter = state->deckCount[player];//Create holder for the deck count
+582			state->hand[player][count] = state->deck[player][deckCounter - 1];//Add card to the hand
+583			state->deckCount[player]--;
+584			state->handCount[player]++;//Increment hand count
+587		return 0;
+588	}
+adventurerEffect (state=0x7fffffff1270, handPos=0) at dominion.c:1338
+1338			cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+drawntreasure = 0
+currentPlayer = 0
+cardDrawn = 4
+temphand = {0 <repeats 206 times>, -136427532, 32767, 0, 0, -139614600, 32767, 1, 0, 4, 0, 259122023, 0, 
+  -136425685, 32767, 0, 0, -66096, 32767, -139616020, 32767, -139613112, 32767, -65824, 32767, -65840, 32767, 39, 
+  0, 0, 0, 0, 0, -134483704, 32767, -134244776, 32767, 4195962, 0, -139604592, 32767, 4195792, 0, 0, 1, 62, 1, 0, 
+  0, -65640, 32767, -65680, 32767, 1, 0, -134483704, 32767, -134224728, 32767, -134225584, 32767, -136424945, 
+  32767, 0, 0, -134483704, 32767, 1, 0, 0, 0, 1, 0, -134225584, 32767, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -134224728, 
+  32767, -65824, 32767, -65840, 32767, 259122023, 0, 4195962, 0, -1, 0, 0, 0, -139613112, 32767, -134244776, 32767, 
+  0 <repeats 22 times>, 6336776, 0, -24212, 32767, -24216, 32767, 1, 0, -143373055, 32767, 0, 0, 4, 0, 1, 0, 
+  -65120, 32767, -24216, 32767, 2, 0, -65040, 32767, 2, 0, 1, 0, -65232, 32767, -24216, 32767, -24220, 32767, 1, 0, 
+  -143373055, 32767, 0, 0, 4, 0, 895, 0, -65120, 32767, -24220, 32767, 3, 0, 0, 0, 3, 0, 2, 0, -65232, 32767, 
+  -24220, 32767, -24224, 32767, 1, 0, -143373055, 32767, 0, 0, 4, 0, 0, 0, -65120, 32767, -24228, 32767, 5, 0...}
+z = 0
+1339			if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold) {
+1333		while(drawntreasure<2){
+1334			if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+1337			drawCard(currentPlayer, state);
+drawCard (player=0, state=0x7fffffff1270) at dominion.c:535
+535		if (state->deckCount[player] <= 0){//Deck is empty
+575			int count = state->handCount[player];//Get current hand count for player
+581			deckCounter = state->deckCount[player];//Create holder for the deck count
+582			state->hand[player][count] = state->deck[player][deckCounter - 1];//Add card to the hand
+583			state->deckCount[player]--;
+584			state->handCount[player]++;//Increment hand count
+587		return 0;
+588	}
+No symbol "loggging" in current context.
